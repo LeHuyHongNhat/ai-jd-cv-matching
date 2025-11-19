@@ -1,0 +1,22 @@
+# Requirements cho Load Testing
+# Cài đặt: pip install -r requirements_loadtest.txt
+
+# Locust - Web-based load testing tool
+locust>=2.15.0
+
+# Requests - HTTP library cho Simple Load Test
+requests>=2.31.0
+
+# Statistics và Analysis
+matplotlib>=3.7.0
+pandas>=2.0.0
+seaborn>=0.12.0
+
+# Optional: Advanced reporting
+Jinja2>=3.1.2
+MarkupSafe>=2.1.3
+
+# Optional: Distributed testing
+gevent>=23.9.0
+psutil>=5.9.5
+
