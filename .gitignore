@@ -81,6 +81,7 @@ summary.json
 load_test_analysis/
 server.log
 server.pid
+io_dump/
 
 # Jupyter Notebook
 .ipynb_checkpoints
