@@ -11,12 +11,12 @@ from app.services.embedding_service import EmbeddingService
 class EnhancedScoringService:
     """
     Enhanced scoring service implementing the 6-category evaluation system:
-    1. Hard Skills (35-40%)
-    2. Work Experience (25-30%)
-    3. Responsibilities & Achievements (15-20%)
-    4. Soft Skills (10-15%)
-    5. Education & Training (5-10%)
-    6. Additional Factors (5%)
+    1. Hard Skills (30.0%)
+    2. Work Experience (25.0%)
+    3. Responsibilities & Achievements (15.0%)
+    4. Soft Skills (10.0%)
+    5. Education & Training (5.0%)
+    6. Additional Factors (15.0%)
     """
     
     def __init__(self, embedding_service: EmbeddingService):
@@ -30,12 +30,12 @@ class EnhancedScoringService:
         
         # Weights for each category
         self.category_weights = {
-            "hard_skills": 0.375,              # 37.5%
-            "work_experience": 0.275,          # 27.5%
-            "responsibilities": 0.175,         # 17.5%
-            "soft_skills": 0.125,              # 12.5%
-            "education": 0.075,                # 7.5%
-            "additional_factors": 0.05         # 5%
+            "hard_skills": 0.30,              # 30.0%
+            "work_experience": 0.25,          # 25.0%
+            "responsibilities": 0.15,         # 15.0%
+            "soft_skills": 0.10,              # 10.0%
+            "education": 0.05,                # 5.0%
+            "additional_factors": 0.15        # 15.0%
         }
     
     def calculate_enhanced_match_score(self, cv_data: Dict[str, Any], jd_data: Dict[str, Any]) -> Dict[str, Any]:
@@ -52,15 +52,14 @@ class EnhancedScoringService:
         cv_struct = cv_data["structured_json"]
         jd_struct = jd_data["structured_json"]
         
-        # Check if new structure is available
-        has_new_structure = self._check_new_structure(cv_struct, jd_struct)
+        # Ensure new structure is available
+        if not self._check_new_structure(cv_struct, jd_struct):
+            raise ValueError(
+                "Structured data must include new schema fields (hard_skills, work_experience, etc.)"
+            )
         
-        if has_new_structure:
-            # Use new detailed scoring
-            scores = self._calculate_detailed_scores(cv_struct, jd_struct)
-        else:
-            # Fallback to legacy scoring
-            scores = self._calculate_legacy_scores(cv_data, jd_data)
+        # Use new detailed scoring
+        scores = self._calculate_detailed_scores(cv_struct, jd_struct)
         
         # Calculate total score
         total_score = sum(
@@ -84,37 +83,37 @@ class EnhancedScoringService:
         """Calculate scores for each category using new structure"""
         scores = {}
         
-        # 1. Hard Skills (37.5%)
+        # 1. Hard Skills (30.0%)
         scores["hard_skills"] = self._score_hard_skills(
             cv_struct.get("hard_skills", {}),
             jd_struct.get("hard_skills", {})
         )
         
-        # 2. Work Experience (27.5%)
+        # 2. Work Experience (25.0%)
         scores["work_experience"] = self._score_work_experience(
             cv_struct.get("work_experience", {}),
             jd_struct.get("work_experience", {})
         )
         
-        # 3. Responsibilities & Achievements (17.5%)
+        # 3. Responsibilities & Achievements (15.0%)
         scores["responsibilities"] = self._score_responsibilities(
             cv_struct.get("responsibilities_achievements", {}),
             jd_struct.get("responsibilities_achievements", {})
         )
         
-        # 4. Soft Skills (12.5%)
+        # 4. Soft Skills (10.0%)
         scores["soft_skills"] = self._score_soft_skills(
             cv_struct.get("soft_skills", {}),
             jd_struct.get("soft_skills", {})
         )
         
-        # 5. Education & Training (7.5%)
+        # 5. Education & Training (5.0%)
         scores["education"] = self._score_education(
             cv_struct.get("education_training", {}),
             jd_struct.get("education_training", {})
         )
         
-        # 6. Additional Factors (5%)
+        # 6. Additional Factors (15.0%)
         scores["additional_factors"] = self._score_additional_factors(
             cv_struct.get("additional_factors", {}),
             jd_struct.get("additional_factors", {})
@@ -363,24 +362,6 @@ class EnhancedScoringService:
         
         matches = sum(1 for jd_item in jd_normalized if jd_item in cv_normalized)
         return matches / len(jd_list)
-    
-    def _calculate_legacy_scores(self, cv_data: Dict, jd_data: Dict) -> Dict[str, float]:
-        """Fallback to legacy scoring if new structure not available"""
-        # Import legacy scoring logic
-        from app.services.scoring_service import ScoringService
-        legacy_service = ScoringService(self.embedding_service)
-        
-        result = legacy_service.calculate_match_score(cv_data, jd_data)
-        
-        # Map to new structure
-        return {
-            "hard_skills": result["breakdown"]["skill_match"],
-            "work_experience": result["breakdown"]["job_title_match"],
-            "responsibilities": result["breakdown"]["overall_semantic"],
-            "soft_skills": 0.8,  # Default
-            "education": result["breakdown"]["education_cert_match"],
-            "additional_factors": 0.9  # Default
-        }
     
     def _generate_detailed_analysis(self, cv_struct: Dict, jd_struct: Dict) -> Dict[str, Any]:
         """Generate detailed textual analysis"""

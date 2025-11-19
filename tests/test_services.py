@@ -245,97 +245,92 @@ class TestVectorStoreService:
 
 
 class TestScoringService:
-    """Test ScoringService"""
-    
-    def test_calculate_overall_semantic_score(self):
-        """Test tính điểm semantic tổng thể"""
-        # Không cần mock OpenAI vì chỉ test thuật toán tính điểm
+    """Test ScoringService (new structured schema only)"""
+
+    @staticmethod
+    def _build_structured_payload():
+        return {
+            "hard_skills": {
+                "programming_languages": ["Python", "JavaScript"],
+                "technologies_frameworks": ["FastAPI", "React"],
+                "tools_software": ["Git", "Docker"],
+                "certifications": ["AWS"],
+                "industry_specific_skills": ["NLP", "Data Pipelines"],
+            },
+            "work_experience": {
+                "job_titles": ["Senior Software Engineer"],
+                "industries": ["Technology", "FinTech"],
+                "total_years": 6,
+            },
+            "responsibilities_achievements": {
+                "key_responsibilities": ["Design APIs", "Lead team"],
+                "achievements": ["Improved latency by 30%"],
+                "project_types": ["Microservices", "Cloud"],
+            },
+            "soft_skills": {
+                "communication_teamwork": ["Cross-functional collaboration"],
+                "leadership_management": ["Mentoring juniors"],
+                "problem_solving": ["Root cause analysis"],
+                "adaptability": ["Fast learner"],
+            },
+            "education_training": {
+                "degrees": ["Bachelor of Computer Science"],
+                "majors": ["Computer Science"],
+                "additional_courses": ["Machine Learning Bootcamp"],
+            },
+            "additional_factors": {
+                "languages": ["English", "Vietnamese"],
+                "availability": "Immediate",
+                "relocation_willingness": True,
+            },
+        }
+
+    def test_calculate_match_score_new_structure(self):
+        """Scoring uses new schema and returns breakdown for 6 categories."""
         mock_embedding_service = MagicMock()
+
+        def fake_embeddings(texts):
+            return [[0.1] * 16 for _ in texts]
+
+        mock_embedding_service.get_embeddings_batch.side_effect = fake_embeddings
+
         scoring_service = ScoringService(mock_embedding_service)
-        
-        # Tạo 2 vectors tương tự
-        cv_embedding = [0.1, 0.2, 0.3] * 100
-        jd_embedding = [0.11, 0.21, 0.31] * 100  # Tương tự nhưng hơi khác
-        
-        score = scoring_service._calculate_overall_semantic_score(cv_embedding, jd_embedding)
-        
-        assert 0.0 <= score <= 1.0
-        assert score > 0.5  # Vectors tương tự nên điểm cao
-    
-    def test_calculate_entity_match_score(self):
-        """Test tính điểm khớp thực thể"""
-        # Không cần mock OpenAI vì test không gọi API
-        mock_embedding_service = MagicMock()
-        scoring_service = ScoringService(mock_embedding_service)
-        
-        cv_entities = ["Python", "JavaScript", "React"]
-        jd_entities = ["Python", "JavaScript"]
-        
-        score = scoring_service._calculate_entity_match_score(cv_entities, jd_entities)
-        
-        assert score == 1.0  # Tất cả entities trong JD đều có trong CV
-        
-        # Test với một số không khớp
-        jd_entities2 = ["Python", "Go"]
-        score2 = scoring_service._calculate_entity_match_score(cv_entities, jd_entities2)
-        
-        assert 0.0 <= score2 <= 1.0
-        assert score2 == 0.5  # Chỉ có 1/2 entities khớp
-    
-    def test_calculate_entity_match_score_empty_jd(self):
-        """Test với JD entities rỗng"""
-        # Không cần mock OpenAI vì test không gọi API
-        mock_embedding_service = MagicMock()
-        scoring_service = ScoringService(mock_embedding_service)
-        
-        score = scoring_service._calculate_entity_match_score(["Python"], [])
-        
-        assert score == 1.0  # Nếu JD rỗng, trả về 1.0
-    
-    def test_calculate_match_score_full(self):
-        """Test tính điểm tổng hợp đầy đủ"""
-        # Mock embedding service
-        mock_embedding_service = MagicMock()
-        
-        # Mock embeddings cho skills
-        mock_skill_embedding = [0.1] * 100
-        mock_embedding_service.get_embeddings_batch.return_value = [
-            mock_skill_embedding,
-            mock_skill_embedding,
-            mock_skill_embedding,
-            mock_skill_embedding
-        ]
-        
-        scoring_service = ScoringService(mock_embedding_service)
-        
-        # Tạo dữ liệu test
+
         cv_data = {
-            "embedding": [0.1] * 100,
-            "structured_json": {
-                "skills": ["Python", "JavaScript"],
-                "job_titles": ["Software Engineer"],
-                "degrees": ["Cử nhân CNTT"],
-                "certifications": ["AWS"]
-            }
+            "embedding": [0.1] * 10,
+            "structured_json": self._build_structured_payload(),
         }
-        
         jd_data = {
-            "embedding": [0.11] * 100,  # Tương tự CV
-            "structured_json": {
-                "skills": ["Python", "JavaScript"],
-                "job_titles": ["Software Engineer"],
-                "degrees": ["Cử nhân CNTT"],
-                "certifications": ["AWS"]
-            }
+            "embedding": [0.2] * 10,
+            "structured_json": self._build_structured_payload(),
         }
-        
+
         result = scoring_service.calculate_match_score(cv_data, jd_data)
-        
+
         assert "total_score" in result
         assert "breakdown" in result
         assert 0.0 <= result["total_score"] <= 1.0
-        assert "overall_semantic" in result["breakdown"]
-        assert "skill_match" in result["breakdown"]
-        assert "job_title_match" in result["breakdown"]
-        assert "education_cert_match" in result["breakdown"]
+        expected_categories = {
+            "hard_skills",
+            "work_experience",
+            "responsibilities",
+            "soft_skills",
+            "education",
+            "additional_factors",
+        }
+        assert set(result["breakdown"].keys()) == expected_categories
+        assert "category_weights" in result
+
+    def test_calculate_match_score_requires_new_schema(self):
+        """Raise error when structured data does not include new schema."""
+        mock_embedding_service = MagicMock()
+        scoring_service = ScoringService(mock_embedding_service)
+
+        legacy_structured = {"skills": ["Python"], "job_titles": ["Engineer"]}
+
+        cv_data = {"embedding": [0.1] * 10, "structured_json": legacy_structured}
+        jd_data = {"embedding": [0.2] * 10, "structured_json": legacy_structured}
+
+        with pytest.raises(ValueError, match="Structured data must include new schema fields"):
+            scoring_service.calculate_match_score(cv_data, jd_data)
 
