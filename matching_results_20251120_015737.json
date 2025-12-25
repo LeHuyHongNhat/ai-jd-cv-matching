@@ -1,0 +1,144 @@
+{
+  "timestamp": "20251120_015737",
+  "jd_file": "jd_AIE.docx",
+  "jd_id": "e85a17df-4c00-4b3b-85d3-b2b011d02e91",
+  "total_cvs": 4,
+  "results": [
+    {
+      "cv_file": "LongHoangTran_AnalyticEngineer_7746969820_LongCV.pdf",
+      "cv_id": "6b80853f-e455-43ee-bb61-6cbeda07951a",
+      "jd_file": "jd_AIE.docx",
+      "jd_id": "e85a17df-4c00-4b3b-85d3-b2b011d02e91",
+      "total_score": 0.5802,
+      "breakdown": {
+        "hard_skills": 0.5469148913231001,
+        "work_experience": 0.5655299586749438,
+        "responsibilities": 0.4394326860255619,
+        "soft_skills": 0.43322533524384443,
+        "education": 0.3106779996055349,
+        "additional_factors": 1.0
+      },
+      "category_weights": {
+        "hard_skills": 0.3,
+        "work_experience": 0.25,
+        "responsibilities": 0.15,
+        "soft_skills": 0.1,
+        "education": 0.05,
+        "additional_factors": 0.15
+      },
+      "detailed_analysis": {
+        "strengths": [
+          "Possesses 47 technical skills"
+        ],
+        "gaps": [
+          "Missing skills: LangChain API, AWS SageMaker, Docker, VespaDB, CDK"
+        ],
+        "recommendations": [
+          "Consider acquiring: LangChain API, AWS SageMaker, Docker"
+        ]
+      }
+    },
+    {
+      "cv_file": "KHANGNH.pdf",
+      "cv_id": "018d0611-8ccd-43a2-ac7e-6ea1f8cb4170",
+      "jd_file": "jd_AIE.docx",
+      "jd_id": "e85a17df-4c00-4b3b-85d3-b2b011d02e91",
+      "total_score": 0.5789,
+      "breakdown": {
+        "hard_skills": 0.6555948975531241,
+        "work_experience": 0.43028535139351776,
+        "responsibilities": 0.40608879491715855,
+        "soft_skills": 0.5,
+        "education": 0.27536693904143134,
+        "additional_factors": 1.0
+      },
+      "category_weights": {
+        "hard_skills": 0.3,
+        "work_experience": 0.25,
+        "responsibilities": 0.15,
+        "soft_skills": 0.1,
+        "education": 0.05,
+        "additional_factors": 0.15
+      },
+      "detailed_analysis": {
+        "strengths": [
+          "Possesses 30 technical skills"
+        ],
+        "gaps": [
+          "Missing skills: LangChain API, AWS SageMaker, MongoDB, VespaDB, CDK"
+        ],
+        "recommendations": [
+          "Consider acquiring: LangChain API, AWS SageMaker, MongoDB"
+        ]
+      }
+    },
+    {
+      "cv_file": "[PTIT] CV AI Engineer - Le Huy Hong Nhat.pdf",
+      "cv_id": "367faa1b-2836-467f-b21e-c36df9128929",
+      "jd_file": "jd_AIE.docx",
+      "jd_id": "e85a17df-4c00-4b3b-85d3-b2b011d02e91",
+      "total_score": 0.5441,
+      "breakdown": {
+        "hard_skills": 0.6159612690054739,
+        "work_experience": 0.277256151353426,
+        "responsibilities": 0.42004968217128125,
+        "soft_skills": 0.5983603358746648,
+        "education": 0.34232422629418646,
+        "additional_factors": 1.0
+      },
+      "category_weights": {
+        "hard_skills": 0.3,
+        "work_experience": 0.25,
+        "responsibilities": 0.15,
+        "soft_skills": 0.1,
+        "education": 0.05,
+        "additional_factors": 0.15
+      },
+      "detailed_analysis": {
+        "strengths": [
+          "Possesses 17 technical skills"
+        ],
+        "gaps": [
+          "Missing skills: LangChain API, AWS SageMaker, VespaDB, CDK, Hugging Face Transformers"
+        ],
+        "recommendations": [
+          "Consider acquiring: LangChain API, AWS SageMaker, VespaDB"
+        ]
+      }
+    },
+    {
+      "cv_file": "CV_VAN.pdf",
+      "cv_id": "91394b32-c64e-4a05-af30-806474bfd086",
+      "jd_file": "jd_AIE.docx",
+      "jd_id": "e85a17df-4c00-4b3b-85d3-b2b011d02e91",
+      "total_score": 0.3557,
+      "breakdown": {
+        "hard_skills": 0.2546886805763115,
+        "work_experience": 0.1922623982973754,
+        "responsibilities": 0.3176537600515318,
+        "soft_skills": 0.30183328311767715,
+        "education": 0.06845819676787397,
+        "additional_factors": 1.0
+      },
+      "category_weights": {
+        "hard_skills": 0.3,
+        "work_experience": 0.25,
+        "responsibilities": 0.15,
+        "soft_skills": 0.1,
+        "education": 0.05,
+        "additional_factors": 0.15
+      },
+      "detailed_analysis": {
+        "strengths": [
+          "Possesses 2 technical skills"
+        ],
+        "gaps": [
+          "Missing skills: LangChain API, Docker, AWS SageMaker, MongoDB, VespaDB"
+        ],
+        "recommendations": [
+          "Consider acquiring: LangChain API, Docker, AWS SageMaker"
+        ]
+      }
+    }
+  ]
+}

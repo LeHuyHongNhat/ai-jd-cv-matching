@@ -1,12 +1,8 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -20,99 +16,49 @@ parts/
 sdist/
 var/
 wheels/
-pip-wheel-metadata/
-share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-PIPFILE.lock
+MANIFEST
 
-# PyInstaller
-*.manifest
-*.spec
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Virtual environments
+# Virtual Environment
 venv/
 env/
 ENV/
-env.bak/
-venv.bak/
+.venv
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*.swn
-.DS_Store
+*~
 
 # Environment variables
-.env
 config.env
-*.env
+.env
+.env.local
 
-# ChromaDB - vector database
-chroma_db/
-demo_chroma_db/
+# ChromaDB
+chroma_data/
 *.sqlite3
-
-# Load testing results
-load_test_report*.html
-ab_results_*.tsv
-*_stats.csv
-*_failures.csv
-*_exceptions.csv
-test_results.json
-summary.json
-load_test_analysis/
-server.log
-server.pid
-io_dump/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
+*.db
 
 # Logs
 *.log
-logs/
+rabbitmq_worker.log
+io_dump/
 
-# Output files
-matching_results_*.json
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Temporary files
 *.tmp
-*.temp
 temp/
 tmp/
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# Mac
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Input files (optional - remove if you want to include sample files)
-# input/cvs/*.pdf
-# input/jds/*.docx
