@@ -3,7 +3,7 @@ from typing import List, Optional
 
 
 class HardSkills(BaseModel):
-    """Hard Skills - Technical/Professional Skills (35-40%)"""
+    """Hard Skills - Technical/Professional Skills (30.0%)"""
     programming_languages: List[str] = Field(
         default_factory=list,
         description="Programming languages"
@@ -27,7 +27,7 @@ class HardSkills(BaseModel):
 
 
 class WorkExperience(BaseModel):
-    """Work Experience (25-30%)"""
+    """Work Experience (25.0%)"""
     total_years: Optional[float] = Field(
         None,
         description="Total years of work experience"
@@ -51,7 +51,7 @@ class WorkExperience(BaseModel):
 
 
 class ResponsibilitiesAchievements(BaseModel):
-    """Tasks, Responsibilities & Achievements (15-20%)"""
+    """Tasks, Responsibilities & Achievements (15.0%)"""
     key_responsibilities: List[str] = Field(
         default_factory=list,
         description="Main responsibilities and tasks performed"
@@ -67,7 +67,7 @@ class ResponsibilitiesAchievements(BaseModel):
 
 
 class SoftSkills(BaseModel):
-    """Soft Skills (10-15%)"""
+    """Soft Skills (10.0%)"""
     communication_teamwork: List[str] = Field(
         default_factory=list,
         description="Communication and teamwork skills"
@@ -87,7 +87,7 @@ class SoftSkills(BaseModel):
 
 
 class EducationTraining(BaseModel):
-    """Education & Training (5-10%)"""
+    """Education & Training (5.0%)"""
     degrees: List[str] = Field(
         default_factory=list,
         description="Academic degrees (Bachelor, Master, PhD, etc.)"
@@ -107,7 +107,7 @@ class EducationTraining(BaseModel):
 
 
 class AdditionalFactors(BaseModel):
-    """Additional Factors (5%)"""
+    """Additional Factors (15.0%)"""
     languages: List[str] = Field(
         default_factory=list,
         description="Languages spoken and proficiency levels"
@@ -140,27 +140,27 @@ class StructuredData(BaseModel):
     # Main Scoring Categories (aligned with matching criteria)
     hard_skills: HardSkills = Field(
         default_factory=HardSkills,
-        description="Technical and professional skills (35-40% weight)"
+        description="Technical and professional skills (30.0% weight)"
     )
     work_experience: WorkExperience = Field(
         default_factory=WorkExperience,
-        description="Work experience details (25-30% weight)"
+        description="Work experience details (25.0% weight)"
     )
     responsibilities_achievements: ResponsibilitiesAchievements = Field(
         default_factory=ResponsibilitiesAchievements,
-        description="Responsibilities and achievements (15-20% weight)"
+        description="Responsibilities and achievements (15.0% weight)"
     )
     soft_skills: SoftSkills = Field(
         default_factory=SoftSkills,
-        description="Soft skills (10-15% weight)"
+        description="Soft skills (10.0% weight)"
     )
     education_training: EducationTraining = Field(
         default_factory=EducationTraining,
-        description="Education and training (5-10% weight)"
+        description="Education and training (5.0% weight)"
     )
     additional_factors: AdditionalFactors = Field(
         default_factory=AdditionalFactors,
-        description="Additional factors (5% weight)"
+        description="Additional factors (15.0% weight)"
     )
     
     # Legacy fields for backward compatibility
@@ -184,10 +184,22 @@ class StructuredData(BaseModel):
 
 # Schema cho API responses
 class ScoreBreakdown(BaseModel):
-    overall_semantic: float
-    skill_match: float
-    job_title_match: float
-    education_cert_match: float
+    """
+    Breakdown điểm matching theo 6 tiêu chí
+    Mỗi score là từ 0-100
+    """
+    hard_skills_score: float = Field(description="Hard Skills matching score (weight: 30%)")
+    work_experience_score: float = Field(description="Work Experience matching score (weight: 25%)")
+    responsibilities_achievements_score: float = Field(description="Responsibilities & Achievements score (weight: 15%)")
+    soft_skills_score: float = Field(description="Soft Skills matching score (weight: 10%)")
+    education_training_score: float = Field(description="Education & Training score (weight: 5%)")
+    additional_factors_score: float = Field(description="Additional Factors score (weight: 15%)")
+    
+    # Legacy fields for backward compatibility (deprecated)
+    overall_semantic: float = Field(default=0.0, description="[Deprecated] Use hard_skills_score instead")
+    skill_match: float = Field(default=0.0, description="[Deprecated] Use hard_skills_score instead")
+    job_title_match: float = Field(default=0.0, description="[Deprecated] Use work_experience_score instead")
+    education_cert_match: float = Field(default=0.0, description="[Deprecated] Use education_training_score instead")
 
 
 class ScoreResponse(BaseModel):
