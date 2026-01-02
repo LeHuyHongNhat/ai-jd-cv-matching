@@ -1,0 +1,2724 @@
+[
+  {
+    "cv_name": "Pham Van Hai",
+    "pdf_file": "cv_001_Pham_Van_Hai.pdf",
+    "accuracy": 87.73809523809526,
+    "processing_time": 14.926540851593018,
+    "comparison": {
+      "overall_accuracy": 87.73809523809526,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Pham Van Hai",
+          "extracted": "Pham Van Hai"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "phamvanhai381@outlook.com",
+          "extracted": "phamvanhai381@outlook.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84929958838",
+          "extracted": "+84929958838"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Python",
+            "JavaScript"
+          ],
+          "extracted_sample": [
+            "Python",
+            "JavaScript"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 0.7142857142857143,
+          "ground_truth_count": 7,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "Spring Boot",
+            "Node.js",
+            "Symfony"
+          ],
+          "extracted_sample": [
+            "Spring Boot",
+            "Node.js",
+            "Symfony"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 6,
+          "extracted_count": 6,
+          "ground_truth_sample": [
+            "Helm",
+            "Grafana",
+            "Chef"
+          ],
+          "extracted_sample": [
+            "Helm",
+            "Grafana",
+            "Chef"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Google Cloud Professional",
+            "CompTIA Security+"
+          ],
+          "extracted_sample": [
+            "Google Cloud Professional",
+            "CompTIA Security+"
+          ]
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 9.0,
+          "extracted": 9
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "ML Engineer",
+            "Senior ML Engineer"
+          ],
+          "extracted_sample": [
+            "ML Engineer",
+            "Senior ML Engineer"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 4,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Banking",
+            "Healthcare",
+            "Telecommunications"
+          ],
+          "extracted_sample": [
+            "Software Development"
+          ]
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 0.5,
+          "ground_truth_count": 4,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Cognizant",
+            "Orient Software",
+            "TMA Solutions"
+          ],
+          "extracted_sample": [
+            "Cognizant",
+            "Orient Software"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Collaborated with cross-functional teams of 11 members",
+            "Created technical documentation and user guides",
+            "Performed troubleshooting and bug fixes"
+          ],
+          "extracted_sample": [
+            "Collaborated with cross-functional teams of 11 members",
+            "Created technical documentation and user guides",
+            "Performed troubleshooting and bug fixes"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Scaled system to handle 69M requests per day",
+            "Achieved 17% customer satisfaction rating"
+          ],
+          "extracted_sample": [
+            "Scaled system to handle 69M requests per day",
+            "Achieved 17% customer satisfaction rating"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.3333333333333333,
+          "ground_truth_count": 6,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Active listening",
+            "Public speaking",
+            "Effective communication"
+          ],
+          "extracted_sample": [
+            "Active listening",
+            "Public speaking"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Agile leadership"
+          ],
+          "extracted_sample": [
+            "Agile leadership"
+          ]
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Bachelor of Science"
+          ],
+          "extracted_sample": [
+            "Bachelor of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Cybersecurity"
+          ],
+          "extracted_sample": [
+            "Cybersecurity"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "British University Vietnam"
+          ],
+          "extracted_sample": [
+            "British University Vietnam"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Intermediate)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Intermediate)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "1 month notice",
+          "extracted": "1 month notice"
+        }
+      ]
+    }
+  },
+  {
+    "cv_name": "Ngo Thi Hoa",
+    "pdf_file": "cv_002_Ngo_Thi_Hoa.pdf",
+    "accuracy": 83.0,
+    "processing_time": 12.299330472946167,
+    "comparison": {
+      "overall_accuracy": 83.0,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Ngo Thi Hoa",
+          "extracted": "Ngo Thi Hoa"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "ngothihoa104@yahoo.com",
+          "extracted": "ngothihoa104@yahoo.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84926391569",
+          "extracted": "+84926391569"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "Shell",
+            "Dart",
+            "Scala"
+          ],
+          "extracted_sample": [
+            "Shell",
+            "Dart",
+            "Scala"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 0.7142857142857143,
+          "ground_truth_count": 7,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "Svelte",
+            "Node.js",
+            "Flask"
+          ],
+          "extracted_sample": [
+            "Svelte",
+            "Node.js",
+            "Flask"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "Kubernetes",
+            "Jira",
+            "RabbitMQ"
+          ],
+          "extracted_sample": [
+            "Kubernetes",
+            "Jira",
+            "RabbitMQ"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 0,
+          "extracted_count": 0,
+          "ground_truth_sample": [],
+          "extracted_sample": []
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 6.2,
+          "extracted": 6
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Software Architect",
+            "Senior Software Architect"
+          ],
+          "extracted_sample": [
+            "Software Architect",
+            "Senior Software Architect"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 2,
+          "extracted_count": 0,
+          "ground_truth_sample": [
+            "Cybersecurity",
+            "Healthcare"
+          ],
+          "extracted_sample": []
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "VNPay",
+            "CMC Corporation"
+          ],
+          "extracted_sample": [
+            "VNPay",
+            "CMC Corporation"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 0.6,
+          "ground_truth_count": 5,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Designed and implemented scalable desktop solutions",
+            "Integrated third-party APIs and services",
+            "Performed troubleshooting and bug fixes"
+          ],
+          "extracted_sample": [
+            "Designed and implemented scalable desktop solutions",
+            "Integrated third-party APIs and services",
+            "Performed troubleshooting and bug fixes"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Increased test coverage from 50% to 70%",
+            "Automated 27 manual processes"
+          ],
+          "extracted_sample": [
+            "Increased test coverage from 50% to 70%",
+            "Automated 27 manual processes"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.2857142857142857,
+          "ground_truth_count": 5,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "Presentation skills",
+            "Client relationship",
+            "Remote collaboration"
+          ],
+          "extracted_sample": [
+            "Presentation skills",
+            "Client relationship",
+            "Mentoring junior developers"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 2,
+          "extracted_count": 0,
+          "ground_truth_sample": [
+            "Mentoring junior developers",
+            "Team leadership"
+          ],
+          "extracted_sample": []
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Master of Science"
+          ],
+          "extracted_sample": [
+            "Master of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Information Technology"
+          ],
+          "extracted_sample": [
+            "Information Technology"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "HCMC University of Technology and Education"
+          ],
+          "extracted_sample": [
+            "HCMC University of Technology and Education"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Immediate",
+          "extracted": "Immediate"
+        }
+      ]
+    }
+  },
+  {
+    "cv_name": "Dinh Thi Quan",
+    "pdf_file": "cv_003_Dinh_Thi_Quan.pdf",
+    "accuracy": 81.01190476190476,
+    "processing_time": 13.746118545532227,
+    "comparison": {
+      "overall_accuracy": 81.01190476190476,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Dinh Thi Quan",
+          "extracted": "Dinh Thi Quan"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "dinhthiquan709@protonmail.com",
+          "extracted": "dinhthiquan709@protonmail.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84933217902",
+          "extracted": "+84933217902"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 5,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "Clojure",
+            "Perl",
+            "JavaScript"
+          ],
+          "extracted_sample": [
+            "Clojure",
+            "Perl",
+            "JavaScript"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "ASP.NET",
+            "Flask",
+            "Scikit-learn"
+          ],
+          "extracted_sample": [
+            "ASP.NET",
+            "Flask",
+            "Scikit-learn"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "RabbitMQ",
+            "Rancher",
+            "Kubernetes"
+          ],
+          "extracted_sample": [
+            "RabbitMQ",
+            "Rancher",
+            "Kubernetes"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "PMP - Project Management Professional"
+          ],
+          "extracted_sample": [
+            "PMP - Project Management Professional"
+          ]
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 5.9,
+          "extracted": 5.9
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 0.5,
+          "ground_truth_count": 2,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "DevOps Engineer",
+            "Senior DevOps Engineer"
+          ],
+          "extracted_sample": [
+            "DevOps Engineer"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Cybersecurity"
+          ],
+          "extracted_sample": [
+            "E-commerce"
+          ]
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Shopee"
+          ],
+          "extracted_sample": [
+            "Shopee"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 0.75,
+          "ground_truth_count": 4,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Optimized desktop system performance and reliability",
+            "Managed database design and optimization",
+            "Performed troubleshooting and bug fixes"
+          ],
+          "extracted_sample": [
+            "Optimized desktop system performance and reliability",
+            "Managed database design and optimization",
+            "Performed troubleshooting and bug fixes"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 0.6666666666666666,
+          "ground_truth_count": 3,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Improved API response time by 443ms",
+            "Improved system performance by 41%",
+            "Led team of 5 developers on major project"
+          ],
+          "extracted_sample": [
+            "Improved API response time by 443ms",
+            "Improved system performance by 41%"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.2857142857142857,
+          "ground_truth_count": 5,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "Technical writing",
+            "Negotiation skills",
+            "Team collaboration"
+          ],
+          "extracted_sample": [
+            "Technical writing",
+            "Negotiation skills",
+            "Project management"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 2,
+          "extracted_count": 0,
+          "ground_truth_sample": [
+            "Project management",
+            "Mentoring junior developers"
+          ],
+          "extracted_sample": []
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Bachelor of Science"
+          ],
+          "extracted_sample": [
+            "Bachelor of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Computer Science"
+          ],
+          "extracted_sample": [
+            "Computer Science"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Phenikaa University"
+          ],
+          "extracted_sample": [
+            "Phenikaa University"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)",
+            "Korean (Basic)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)",
+            "Korean (Basic)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "2 weeks notice",
+          "extracted": "2 weeks notice"
+        }
+      ]
+    }
+  },
+  {
+    "cv_name": "Pham Duy Yen",
+    "pdf_file": "cv_004_Pham_Duy_Yen.pdf",
+    "accuracy": 83.48809523809526,
+    "processing_time": 15.030788898468018,
+    "comparison": {
+      "overall_accuracy": 83.48809523809526,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Pham Duy Yen",
+          "extracted": "Pham Duy Yen"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "phamduyyen488@outlook.com",
+          "extracted": "phamduyyen488@outlook.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84929746217",
+          "extracted": "+84929746217"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 5,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "C++",
+            "R",
+            "Shell"
+          ],
+          "extracted_sample": [
+            "C++",
+            "R",
+            "Shell"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 0.7142857142857143,
+          "ground_truth_count": 7,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "Ruby on Rails",
+            "FastAPI",
+            "Keras"
+          ],
+          "extracted_sample": [
+            "Ruby on Rails",
+            "FastAPI",
+            "Keras"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "Docker",
+            "Git",
+            "Prometheus"
+          ],
+          "extracted_sample": [
+            "Docker",
+            "Git",
+            "Prometheus"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "AWS Certified Solutions Architect",
+            "TensorFlow Developer Certificate"
+          ],
+          "extracted_sample": [
+            "AWS Certified Solutions Architect",
+            "TensorFlow Developer Certificate"
+          ]
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 2.7,
+          "extracted": 2.7
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Blockchain Developer",
+            "Junior Blockchain Developer"
+          ],
+          "extracted_sample": [
+            "Blockchain Developer",
+            "Junior Blockchain Developer"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 4,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Manufacturing",
+            "Energy",
+            "Telecommunications"
+          ],
+          "extracted_sample": [
+            "Software Development",
+            "Technology Solutions"
+          ]
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 0.5,
+          "ground_truth_count": 4,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "EPAM",
+            "NITECO",
+            "VNPay"
+          ],
+          "extracted_sample": [
+            "EPAM",
+            "NITECO"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 0.75,
+          "ground_truth_count": 4,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Managed database design and optimization",
+            "Developed and maintained desktop applications",
+            "Created technical documentation and user guides"
+          ],
+          "extracted_sample": [
+            "Managed database design and optimization",
+            "Developed and maintained desktop applications",
+            "Created technical documentation and user guides"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 0.4,
+          "ground_truth_count": 5,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Reduced deployment time by 27%",
+            "Increased test coverage from 23% to 51%",
+            "Improved API response time by 139ms"
+          ],
+          "extracted_sample": [
+            "Reduced deployment time by 27%",
+            "Increased test coverage from 23% to 51%"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.6666666666666666,
+          "ground_truth_count": 3,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Active listening",
+            "Client relationship",
+            "Team building"
+          ],
+          "extracted_sample": [
+            "Active listening",
+            "Client relationship"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 0.6666666666666666,
+          "ground_truth_count": 3,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Agile leadership",
+            "Project management",
+            "People management"
+          ],
+          "extracted_sample": [
+            "Agile leadership",
+            "Project management"
+          ]
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Bachelor of Science"
+          ],
+          "extracted_sample": [
+            "Bachelor of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Electronics and Telecommunications"
+          ],
+          "extracted_sample": [
+            "Electronics and Telecommunications"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Phenikaa University"
+          ],
+          "extracted_sample": [
+            "Phenikaa University"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Advanced)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Advanced)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "1 month notice",
+          "extracted": "1 month notice"
+        }
+      ]
+    }
+  },
+  {
+    "cv_name": "Vo Van Trung",
+    "pdf_file": "cv_005_Vo_Van_Trung.pdf",
+    "accuracy": 84.67857142857143,
+    "processing_time": 12.676100015640259,
+    "comparison": {
+      "overall_accuracy": 84.67857142857143,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Vo Van Trung",
+          "extracted": "Vo Van Trung"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "vovantrung844@protonmail.com",
+          "extracted": "vovantrung844@protonmail.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84922576045",
+          "extracted": "+84922576045"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Objective-C",
+            "Julia",
+            "Perl"
+          ],
+          "extracted_sample": [
+            "Objective-C",
+            "Julia",
+            "Perl"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "NestJS",
+            "Pandas",
+            "Django"
+          ],
+          "extracted_sample": [
+            "NestJS",
+            "Pandas",
+            "Django"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "AWS",
+            "Chef",
+            "Ansible"
+          ],
+          "extracted_sample": [
+            "AWS",
+            "Chef",
+            "Ansible"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "TensorFlow Developer Certificate"
+          ],
+          "extracted_sample": [
+            "TensorFlow Developer Certificate"
+          ]
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 8.0,
+          "extracted": 8
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Backend Developer",
+            "Senior Backend Developer"
+          ],
+          "extracted_sample": [
+            "Backend Developer",
+            "Senior Backend Developer"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 5,
+          "extracted_count": 0,
+          "ground_truth_sample": [
+            "Banking",
+            "Media & Entertainment",
+            "E-commerce"
+          ],
+          "extracted_sample": []
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 0.4,
+          "ground_truth_count": 5,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Shopee",
+            "NITECO",
+            "Savvycom"
+          ],
+          "extracted_sample": [
+            "Shopee",
+            "NITECO"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 0.75,
+          "ground_truth_count": 4,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Developed and maintained distributed applications",
+            "Implemented security best practices and compliance",
+            "Performed troubleshooting and bug fixes"
+          ],
+          "extracted_sample": [
+            "Developed and maintained distributed applications",
+            "Implemented security best practices and compliance",
+            "Performed troubleshooting and bug fixes"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 0.5,
+          "ground_truth_count": 4,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Achieved 21% customer satisfaction rating",
+            "Successfully migrated 323000 users to new platform",
+            "Reduced server response time from 8.4s to 3.28s"
+          ],
+          "extracted_sample": [
+            "Achieved 21% customer satisfaction rating",
+            "Successfully migrated 323000 users to new platform"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.2857142857142857,
+          "ground_truth_count": 7,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Client relationship",
+            "Technical writing",
+            "Stakeholder management"
+          ],
+          "extracted_sample": [
+            "Client relationship",
+            "Technical writing"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Vision setting",
+            "Mentoring junior developers"
+          ],
+          "extracted_sample": [
+            "Vision setting",
+            "Mentoring junior developers"
+          ]
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Master of Science"
+          ],
+          "extracted_sample": [
+            "Master of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Data Science"
+          ],
+          "extracted_sample": [
+            "Data Science"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "British University Vietnam"
+          ],
+          "extracted_sample": [
+            "British University Vietnam"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "2 weeks notice",
+          "extracted": "2 weeks notice"
+        }
+      ]
+    }
+  },
+  {
+    "cv_name": "Cao Van Trung",
+    "pdf_file": "cv_006_Cao_Van_Trung.pdf",
+    "accuracy": 81.66666666666667,
+    "processing_time": 14.058097124099731,
+    "comparison": {
+      "overall_accuracy": 81.66666666666667,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Cao Van Trung",
+          "extracted": "Cao Van Trung"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "caovantrung398@outlook.com",
+          "extracted": "caovantrung398@outlook.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84926079443",
+          "extracted": "+84926079443"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 5,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "Haskell",
+            "C#",
+            "Clojure"
+          ],
+          "extracted_sample": [
+            "Haskell",
+            "C#",
+            "Clojure"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 5,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "NestJS",
+            "PyTorch",
+            "Angular"
+          ],
+          "extracted_sample": [
+            "NestJS",
+            "PyTorch",
+            "Angular"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "New Relic",
+            "Docker",
+            "Ansible"
+          ],
+          "extracted_sample": [
+            "New Relic",
+            "Docker",
+            "Ansible"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Certified Kubernetes Administrator",
+            "AWS Certified Developer"
+          ],
+          "extracted_sample": [
+            "Certified Kubernetes Administrator",
+            "AWS Certified Developer"
+          ]
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 3.7,
+          "extracted": 3.7
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Data Engineer",
+            "Senior Data Engineer"
+          ],
+          "extracted_sample": [
+            "Data Engineer",
+            "Senior Data Engineer"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 5,
+          "extracted_count": 0,
+          "ground_truth_sample": [
+            "Gaming",
+            "Fintech",
+            "Agriculture"
+          ],
+          "extracted_sample": []
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 0.4,
+          "ground_truth_count": 5,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Framgia",
+            "Luxoft",
+            "Momo"
+          ],
+          "extracted_sample": [
+            "Framgia",
+            "Luxoft"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 0.6,
+          "ground_truth_count": 5,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Mentored junior developers on best practices",
+            "Built and deployed enterprise microservices architecture",
+            "Optimized mobile system performance and reliability"
+          ],
+          "extracted_sample": [
+            "Mentored junior developers on best practices",
+            "Built and deployed enterprise microservices architecture",
+            "Optimized mobile system performance and reliability"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Reduced server response time from 3.5s to 0.3s",
+            "Successfully migrated 269000 users to new platform"
+          ],
+          "extracted_sample": [
+            "Reduced server response time from 3.5s to 0.3s",
+            "Successfully migrated 269000 users to new platform"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.3333333333333333,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "Technical writing",
+            "Stakeholder management",
+            "Public speaking"
+          ],
+          "extracted_sample": [
+            "Technical writing",
+            "Stakeholder management",
+            "People management"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 3,
+          "extracted_count": 0,
+          "ground_truth_sample": [
+            "People management",
+            "Project management",
+            "Vision setting"
+          ],
+          "extracted_sample": []
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Bachelor of Science"
+          ],
+          "extracted_sample": [
+            "Bachelor of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Cybersecurity"
+          ],
+          "extracted_sample": [
+            "Cybersecurity"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Phenikaa University"
+          ],
+          "extracted_sample": [
+            "Phenikaa University"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Negotiable",
+          "extracted": "Negotiable"
+        }
+      ]
+    }
+  },
+  {
+    "cv_name": "Vu Thi Hoa",
+    "pdf_file": "cv_007_Vu_Thi_Hoa.pdf",
+    "accuracy": 80.42857142857143,
+    "processing_time": 14.016326427459717,
+    "comparison": {
+      "overall_accuracy": 80.42857142857143,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Vu Thi Hoa",
+          "extracted": "Vu Thi Hoa"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "vuthihoa303@gmail.com",
+          "extracted": "vuthihoa303@gmail.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84958436558",
+          "extracted": "+84958436558"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 5,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "PHP",
+            "Haskell",
+            "Ruby"
+          ],
+          "extracted_sample": [
+            "PHP",
+            "Haskell",
+            "Ruby"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 0.8333333333333334,
+          "ground_truth_count": 6,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "Scikit-learn",
+            "Symfony",
+            "Apache Spark"
+          ],
+          "extracted_sample": [
+            "Scikit-learn",
+            "Symfony",
+            "Apache Spark"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 6,
+          "extracted_count": 6,
+          "ground_truth_sample": [
+            "Datadog",
+            "Vault",
+            "Puppet"
+          ],
+          "extracted_sample": [
+            "Datadog",
+            "Vault",
+            "Puppet"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Google Cloud Professional"
+          ],
+          "extracted_sample": [
+            "Google Cloud Professional"
+          ]
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 7.0,
+          "extracted": 7
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Embedded Systems Engineer",
+            "Senior Embedded Systems Engineer"
+          ],
+          "extracted_sample": [
+            "Embedded Systems Engineer",
+            "Senior Embedded Systems Engineer"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 5,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Social Media",
+            "IoT",
+            "Real Estate"
+          ],
+          "extracted_sample": [
+            "Technology",
+            "Software Development"
+          ]
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 0.4,
+          "ground_truth_count": 5,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Accenture",
+            "EPAM",
+            "ELCA"
+          ],
+          "extracted_sample": [
+            "Accenture",
+            "EPAM"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 0.5,
+          "ground_truth_count": 6,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Implemented CI/CD pipelines for automated deployments",
+            "Implemented security best practices and compliance",
+            "Optimized enterprise system performance and reliability"
+          ],
+          "extracted_sample": [
+            "Implemented CI/CD pipelines for automated deployments",
+            "Implemented security best practices and compliance",
+            "Optimized enterprise system performance and reliability"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 0.4,
+          "ground_truth_count": 5,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Achieved 34% customer satisfaction rating",
+            "Decreased bug rate by 21%",
+            "Increased test coverage from 37% to 62%"
+          ],
+          "extracted_sample": [
+            "Achieved 34% customer satisfaction rating",
+            "Decreased bug rate by 21%"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.2857142857142857,
+          "ground_truth_count": 7,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Presentation skills",
+            "Public speaking",
+            "Effective communication"
+          ],
+          "extracted_sample": [
+            "Presentation skills",
+            "Public speaking"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 0.6666666666666666,
+          "ground_truth_count": 3,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Decision making",
+            "People management",
+            "Vision setting"
+          ],
+          "extracted_sample": [
+            "Decision making",
+            "People management"
+          ]
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Master of Science"
+          ],
+          "extracted_sample": [
+            "Master of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Information Technology"
+          ],
+          "extracted_sample": [
+            "Information Technology"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Duy Tan University"
+          ],
+          "extracted_sample": [
+            "Duy Tan University"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Advanced)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Advanced)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "2 weeks notice",
+          "extracted": "2 weeks notice"
+        }
+      ]
+    }
+  },
+  {
+    "cv_name": "Nguyen Khanh Lam",
+    "pdf_file": "cv_008_Nguyen_Khanh_Lam.pdf",
+    "accuracy": 79.91666666666666,
+    "processing_time": 13.607198476791382,
+    "comparison": {
+      "overall_accuracy": 79.91666666666666,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Nguyen Khanh Lam",
+          "extracted": "Nguyen Khanh Lam"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "nguyenkhanhlam299@outlook.com",
+          "extracted": "nguyenkhanhlam299@outlook.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84972633026",
+          "extracted": "+84972633026"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Objective-C",
+            "Swift",
+            "JavaScript"
+          ],
+          "extracted_sample": [
+            "Objective-C",
+            "Swift",
+            "JavaScript"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 0.8333333333333334,
+          "ground_truth_count": 6,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "Quarkus",
+            "Next.js",
+            "Vue.js"
+          ],
+          "extracted_sample": [
+            "Quarkus",
+            "Next.js",
+            "Vue.js"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Postman",
+            "CircleCI",
+            "Consul"
+          ],
+          "extracted_sample": [
+            "Postman",
+            "CircleCI",
+            "Consul"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Azure Fundamentals"
+          ],
+          "extracted_sample": [
+            "Azure Fundamentals"
+          ]
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 10.0,
+          "extracted": 10
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "AI Engineer",
+            "Senior AI Engineer"
+          ],
+          "extracted_sample": [
+            "AI Engineer",
+            "Senior AI Engineer"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 4,
+          "extracted_count": 0,
+          "ground_truth_sample": [
+            "Insurance",
+            "E-commerce",
+            "Retail"
+          ],
+          "extracted_sample": []
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 0.5,
+          "ground_truth_count": 4,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Tiki",
+            "ZaloPay",
+            "VPBank"
+          ],
+          "extracted_sample": [
+            "Tiki",
+            "ZaloPay"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Mentored junior developers on best practices",
+            "Implemented security best practices and compliance",
+            "Optimized desktop system performance and reliability"
+          ],
+          "extracted_sample": [
+            "Mentored junior developers on best practices",
+            "Implemented security best practices and compliance",
+            "Optimized desktop system performance and reliability"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 0.4,
+          "ground_truth_count": 5,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Automated 17 manual processes",
+            "Achieved 40% customer satisfaction rating",
+            "Successfully migrated 121000 users to new platform"
+          ],
+          "extracted_sample": [
+            "Automated 17 manual processes",
+            "Achieved 40% customer satisfaction rating"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.25,
+          "ground_truth_count": 6,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "Stakeholder management",
+            "Negotiation skills",
+            "Effective communication"
+          ],
+          "extracted_sample": [
+            "Stakeholder management",
+            "Negotiation skills",
+            "People management"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 2,
+          "extracted_count": 0,
+          "ground_truth_sample": [
+            "People management",
+            "Vision setting"
+          ],
+          "extracted_sample": []
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Master of Science"
+          ],
+          "extracted_sample": [
+            "Master of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Cybersecurity"
+          ],
+          "extracted_sample": [
+            "Cybersecurity"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Phenikaa University"
+          ],
+          "extracted_sample": [
+            "Phenikaa University"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "2 weeks notice",
+          "extracted": "2 weeks notice"
+        }
+      ]
+    }
+  },
+  {
+    "cv_name": "Nguyen Kim Hung",
+    "pdf_file": "cv_009_Nguyen_Kim_Hung.pdf",
+    "accuracy": 86.76190476190477,
+    "processing_time": 15.519156694412231,
+    "comparison": {
+      "overall_accuracy": 86.76190476190477,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Nguyen Kim Hung",
+          "extracted": "Nguyen Kim Hung"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "nguyenkimhung515@protonmail.com",
+          "extracted": "nguyenkimhung515@protonmail.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84919559708",
+          "extracted": "+84919559708"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "C++",
+            "Haskell"
+          ],
+          "extracted_sample": [
+            "C++",
+            "Haskell"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "Echo",
+            "Quarkus",
+            "Laravel"
+          ],
+          "extracted_sample": [
+            "Echo",
+            "Quarkus",
+            "Laravel"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "AWS",
+            "Puppet",
+            "New Relic"
+          ],
+          "extracted_sample": [
+            "AWS",
+            "Puppet",
+            "New Relic"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "CompTIA Security+"
+          ],
+          "extracted_sample": [
+            "CompTIA Security+"
+          ]
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 5.4,
+          "extracted": 5
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Software Architect",
+            "Senior Software Architect"
+          ],
+          "extracted_sample": [
+            "Software Architect",
+            "Senior Software Architect"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Manufacturing",
+            "Healthcare"
+          ],
+          "extracted_sample": [
+            "Software Development",
+            "Banking"
+          ]
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Framgia",
+            "VPBank"
+          ],
+          "extracted_sample": [
+            "Framgia",
+            "VPBank"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Built and deployed mobile microservices architecture",
+            "Led development of enterprise platform from scratch",
+            "Implemented CI/CD pipelines for automated deployments"
+          ],
+          "extracted_sample": [
+            "Built and deployed mobile microservices architecture",
+            "Led development of enterprise platform from scratch",
+            "Implemented CI/CD pipelines for automated deployments"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 0.4,
+          "ground_truth_count": 5,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Reduced infrastructure costs by 31%",
+            "Achieved 50% customer satisfaction rating",
+            "Improved system performance by 24%"
+          ],
+          "extracted_sample": [
+            "Reduced infrastructure costs by 31%",
+            "Achieved 50% customer satisfaction rating"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.2857142857142857,
+          "ground_truth_count": 7,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Stakeholder management",
+            "Technical writing",
+            "Active listening"
+          ],
+          "extracted_sample": [
+            "Stakeholder management",
+            "Technical writing"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 0.6666666666666666,
+          "ground_truth_count": 3,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Vision setting",
+            "Strategic planning",
+            "People management"
+          ],
+          "extracted_sample": [
+            "Vision setting",
+            "Strategic planning"
+          ]
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Bachelor of Science"
+          ],
+          "extracted_sample": [
+            "Bachelor of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Cybersecurity"
+          ],
+          "extracted_sample": [
+            "Cybersecurity"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Posts and Telecommunications Institute of Technology"
+          ],
+          "extracted_sample": [
+            "Posts and Telecommunications Institute of Technology"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)",
+            "Japanese (Intermediate)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)",
+            "Japanese (Intermediate)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Immediate",
+          "extracted": "Immediate"
+        }
+      ]
+    }
+  },
+  {
+    "cv_name": "Nguyen Xuan Phong",
+    "pdf_file": "cv_010_Nguyen_Xuan_Phong.pdf",
+    "accuracy": 87.5,
+    "processing_time": 16.631873846054077,
+    "comparison": {
+      "overall_accuracy": 87.5,
+      "total_fields": 20,
+      "field_results": [
+        {
+          "field": "full_name",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Nguyen Xuan Phong",
+          "extracted": "Nguyen Xuan Phong"
+        },
+        {
+          "field": "email",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "nguyenxuanphong512@gmail.com",
+          "extracted": "nguyenxuanphong512@gmail.com"
+        },
+        {
+          "field": "phone",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "+84989078200",
+          "extracted": "+84989078200"
+        },
+        {
+          "field": "hard_skills.programming_languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 4,
+          "extracted_count": 4,
+          "ground_truth_sample": [
+            "Objective-C",
+            "Swift",
+            "R"
+          ],
+          "extracted_sample": [
+            "Objective-C",
+            "Swift",
+            "R"
+          ]
+        },
+        {
+          "field": "hard_skills.technologies_frameworks",
+          "type": "list",
+          "similarity": 0.8333333333333334,
+          "ground_truth_count": 6,
+          "extracted_count": 5,
+          "ground_truth_sample": [
+            "Django",
+            "NumPy",
+            "TensorFlow"
+          ],
+          "extracted_sample": [
+            "Django",
+            "NumPy",
+            "TensorFlow"
+          ]
+        },
+        {
+          "field": "hard_skills.tools_software",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "GCP",
+            "Datadog",
+            "RabbitMQ"
+          ],
+          "extracted_sample": [
+            "GCP",
+            "Datadog",
+            "RabbitMQ"
+          ]
+        },
+        {
+          "field": "hard_skills.certifications",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 2,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Azure Fundamentals",
+            "CISSP - Certified Information Systems Security Professional"
+          ],
+          "extracted_sample": [
+            "Azure Fundamentals",
+            "CISSP - Certified Information Systems Security Professional"
+          ]
+        },
+        {
+          "field": "work_experience.total_years",
+          "type": "numeric",
+          "match": 1.0,
+          "ground_truth": 0.8,
+          "extracted": 0.8
+        },
+        {
+          "field": "work_experience.job_titles",
+          "type": "list",
+          "similarity": 0.5,
+          "ground_truth_count": 2,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Data Scientist",
+            "Junior Data Scientist"
+          ],
+          "extracted_sample": [
+            "Data Scientist"
+          ]
+        },
+        {
+          "field": "work_experience.industries",
+          "type": "list",
+          "similarity": 0.0,
+          "ground_truth_count": 1,
+          "extracted_count": 0,
+          "ground_truth_sample": [
+            "Energy"
+          ],
+          "extracted_sample": []
+        },
+        {
+          "field": "work_experience.companies",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Katalon"
+          ],
+          "extracted_sample": [
+            "Katalon"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.key_responsibilities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Implemented CI/CD pipelines for automated deployments",
+            "Developed and maintained web applications",
+            "Managed database design and optimization"
+          ],
+          "extracted_sample": [
+            "Implemented CI/CD pipelines for automated deployments",
+            "Developed and maintained web applications",
+            "Managed database design and optimization"
+          ]
+        },
+        {
+          "field": "responsibilities_achievements.achievements",
+          "type": "list",
+          "similarity": 0.6666666666666666,
+          "ground_truth_count": 3,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Implemented feature that increased revenue by 18%",
+            "Increased test coverage from 53% to 73%",
+            "Reduced infrastructure costs by 66%"
+          ],
+          "extracted_sample": [
+            "Implemented feature that increased revenue by 18%",
+            "Increased test coverage from 53% to 73%"
+          ]
+        },
+        {
+          "field": "soft_skills.communication_teamwork",
+          "type": "list",
+          "similarity": 0.5,
+          "ground_truth_count": 4,
+          "extracted_count": 2,
+          "ground_truth_sample": [
+            "Active listening",
+            "Client relationship",
+            "Team building"
+          ],
+          "extracted_sample": [
+            "Active listening",
+            "Client relationship"
+          ]
+        },
+        {
+          "field": "soft_skills.leadership_management",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Vision setting"
+          ],
+          "extracted_sample": [
+            "Vision setting"
+          ]
+        },
+        {
+          "field": "education_training.degrees",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Bachelor of Science"
+          ],
+          "extracted_sample": [
+            "Bachelor of Science"
+          ]
+        },
+        {
+          "field": "education_training.majors",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "Software Engineering"
+          ],
+          "extracted_sample": [
+            "Software Engineering"
+          ]
+        },
+        {
+          "field": "education_training.universities",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 1,
+          "extracted_count": 1,
+          "ground_truth_sample": [
+            "University of Information Technology - VNU-HCM"
+          ],
+          "extracted_sample": [
+            "University of Information Technology - VNU-HCM"
+          ]
+        },
+        {
+          "field": "additional_factors.languages",
+          "type": "list",
+          "similarity": 1.0,
+          "ground_truth_count": 3,
+          "extracted_count": 3,
+          "ground_truth_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)",
+            "Korean (Basic)"
+          ],
+          "extracted_sample": [
+            "Vietnamese (Native)",
+            "English (Fluent)",
+            "Korean (Basic)"
+          ]
+        },
+        {
+          "field": "additional_factors.availability",
+          "type": "string",
+          "match": 1.0,
+          "ground_truth": "Negotiable",
+          "extracted": "Negotiable"
+        }
+      ]
+    }
+  }
+]

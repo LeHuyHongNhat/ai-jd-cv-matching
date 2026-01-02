@@ -1,0 +1,104 @@
+{
+  "full_name": "Tran Minh Phong",
+  "email": "tranminhphong789@gmail.com",
+  "phone": "+84987654321",
+  "hard_skills": {
+    "programming_languages": ["JavaScript", "TypeScript", "Python", "Java"],
+    "technologies_frameworks": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "Next.js",
+      "Django",
+      "Spring Boot"
+    ],
+    "tools_software": ["Git", "Docker", "Kubernetes", "AWS"],
+    "certifications": [
+      "AWS Certified Solutions Architect",
+      "Google Cloud Professional"
+    ],
+    "industry_specific_skills": [
+      "Full-stack development",
+      "API design",
+      "Code review",
+      "System architecture"
+    ]
+  },
+  "work_experience": {
+    "total_years": 5.5,
+    "job_titles": ["Full-Stack Developer", "Senior Full-Stack Developer"],
+    "industries": ["E-commerce", "Fintech", "Healthcare"],
+    "companies": ["Tiki", "Momo", "FPT Software"],
+    "company_sizes": ["Enterprise", "Startup"]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Developed and maintained full-stack web applications using React and Node.js",
+      "Collaborated with cross-functional teams of 12 members",
+      "Participated in code reviews and technical architecture decisions",
+      "Mentored 3 junior developers"
+    ],
+    "achievements": [
+      "Improved system performance by 45%",
+      "Reduced deployment time by 55%",
+      "Led team of 5 developers on critical payment gateway project",
+      "Migrated monolithic application to microservices architecture, serving 2M+ users"
+    ],
+    "project_types": [
+      "E-commerce platform",
+      "Payment gateway",
+      "Data analytics dashboard",
+      "Mobile application"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Effective communication",
+      "Cross-functional teamwork",
+      "Presentation skills"
+    ],
+    "leadership_management": [
+      "Team leadership",
+      "Project management",
+      "Mentoring junior developers"
+    ],
+    "problem_solving": [
+      "Analytical thinking",
+      "Critical thinking",
+      "Algorithm optimization"
+    ],
+    "adaptability": ["Quick learner", "Adaptive to new technologies"]
+  },
+  "education_training": {
+    "degrees": ["Bachelor of Science"],
+    "majors": ["Software Engineering"],
+    "universities": ["Posts and Telecommunications Institute of Technology"],
+    "additional_courses": [
+      "AWS Cloud Practitioner",
+      "Docker & Kubernetes",
+      "Machine Learning Bootcamp"
+    ]
+  },
+  "additional_factors": {
+    "languages": ["Vietnamese (Native)", "English (Fluent - IELTS 7.5)"],
+    "availability": "2 weeks notice",
+    "relocation_willingness": true,
+    "travel_willingness": true,
+    "expected_salary": "$2000-2500/month"
+  },
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "React",
+    "Node.js",
+    "Docker",
+    "AWS"
+  ],
+  "job_titles": ["Full-Stack Developer"],
+  "degrees": ["Bachelor of Science in Software Engineering"],
+  "certifications": [
+    "AWS Certified Solutions Architect",
+    "Google Cloud Professional"
+  ]
+}

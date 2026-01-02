@@ -1,0 +1,146 @@
+{
+  "full_name": "Nguyen Khanh Lam",
+  "email": "nguyenkhanhlam299@outlook.com",
+  "phone": "+84972633026",
+  "hard_skills": {
+    "programming_languages": [
+      "Objective-C",
+      "Swift",
+      "JavaScript"
+    ],
+    "technologies_frameworks": [
+      "Quarkus",
+      "Next.js",
+      "Vue.js",
+      "Laravel",
+      "Apache Spark",
+      "Ruby on Rails"
+    ],
+    "tools_software": [
+      "Postman",
+      "CircleCI",
+      "Consul"
+    ],
+    "certifications": [
+      "Azure Fundamentals"
+    ],
+    "industry_specific_skills": [
+      "Code review",
+      "API design",
+      "GraphQL"
+    ]
+  },
+  "work_experience": {
+    "total_years": 10.0,
+    "job_titles": [
+      "AI Engineer",
+      "Senior AI Engineer"
+    ],
+    "industries": [
+      "Insurance",
+      "E-commerce",
+      "Retail",
+      "Manufacturing"
+    ],
+    "companies": [
+      "Tiki",
+      "ZaloPay",
+      "VPBank",
+      "Axon Active"
+    ],
+    "company_sizes": [
+      "Startup",
+      "SME"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Mentored junior developers on best practices",
+      "Implemented security best practices and compliance",
+      "Optimized desktop system performance and reliability"
+    ],
+    "achievements": [
+      "Automated 17 manual processes",
+      "Achieved 40% customer satisfaction rating",
+      "Successfully migrated 121000 users to new platform",
+      "Implemented feature that increased revenue by 39%",
+      "Led team of 5 developers on major project"
+    ],
+    "project_types": [
+      "Supply chain management",
+      "Financial trading platform",
+      "Video streaming service",
+      "Social media platform"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Stakeholder management",
+      "Negotiation skills",
+      "Effective communication",
+      "Cross-cultural communication",
+      "Agile teamwork",
+      "Pair programming"
+    ],
+    "leadership_management": [
+      "People management",
+      "Vision setting"
+    ],
+    "problem_solving": [
+      "Troubleshooting",
+      "Systems thinking",
+      "Debugging complex systems",
+      "Creative problem solving"
+    ],
+    "adaptability": [
+      "Open to feedback"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Master of Science"
+    ],
+    "majors": [
+      "Cybersecurity"
+    ],
+    "universities": [
+      "Phenikaa University"
+    ],
+    "additional_courses": [
+      "React Advanced"
+    ]
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Fluent)"
+    ],
+    "availability": "2 weeks notice",
+    "relocation_willingness": false,
+    "travel_willingness": false,
+    "expected_salary": "$880/month"
+  },
+  "skills": [
+    "Objective-C",
+    "Swift",
+    "JavaScript",
+    "Quarkus",
+    "Next.js",
+    "Vue.js",
+    "Laravel",
+    "Apache Spark",
+    "Ruby on Rails",
+    "Postman",
+    "CircleCI",
+    "Consul"
+  ],
+  "job_titles": [
+    "AI Engineer"
+  ],
+  "degrees": [
+    "Master of Science in Cybersecurity"
+  ],
+  "certifications": [
+    "Azure Fundamentals"
+  ]
+}

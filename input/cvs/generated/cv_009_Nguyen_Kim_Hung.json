@@ -1,0 +1,142 @@
+{
+  "full_name": "Nguyen Kim Hung",
+  "email": "nguyenkimhung515@protonmail.com",
+  "phone": "+84919559708",
+  "hard_skills": {
+    "programming_languages": [
+      "C++",
+      "Haskell"
+    ],
+    "technologies_frameworks": [
+      "Echo",
+      "Quarkus",
+      "Laravel",
+      "React"
+    ],
+    "tools_software": [
+      "AWS",
+      "Puppet",
+      "New Relic",
+      "ArgoCD"
+    ],
+    "certifications": [
+      "CompTIA Security+"
+    ],
+    "industry_specific_skills": [
+      "Integration testing",
+      "API design",
+      "DevOps practices"
+    ]
+  },
+  "work_experience": {
+    "total_years": 5.4,
+    "job_titles": [
+      "Software Architect",
+      "Senior Software Architect"
+    ],
+    "industries": [
+      "Manufacturing",
+      "Healthcare"
+    ],
+    "companies": [
+      "Framgia",
+      "VPBank"
+    ],
+    "company_sizes": [
+      "Enterprise",
+      "Startup",
+      "SME"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Built and deployed mobile microservices architecture",
+      "Led development of enterprise platform from scratch",
+      "Implemented CI/CD pipelines for automated deployments"
+    ],
+    "achievements": [
+      "Reduced infrastructure costs by 31%",
+      "Achieved 50% customer satisfaction rating",
+      "Improved system performance by 24%",
+      "Reduced deployment time by 43%",
+      "Reduced server response time from 2.2s to 0.7s"
+    ],
+    "project_types": [
+      "Data warehouse",
+      "Inventory management system"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Stakeholder management",
+      "Technical writing",
+      "Active listening",
+      "Negotiation skills",
+      "Conflict resolution",
+      "Remote collaboration",
+      "Code review facilitation"
+    ],
+    "leadership_management": [
+      "Vision setting",
+      "Strategic planning",
+      "People management"
+    ],
+    "problem_solving": [
+      "Algorithm optimization",
+      "Root cause analysis",
+      "Critical thinking"
+    ],
+    "adaptability": [
+      "Change management",
+      "Innovation"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Bachelor of Science"
+    ],
+    "majors": [
+      "Cybersecurity"
+    ],
+    "universities": [
+      "Posts and Telecommunications Institute of Technology"
+    ],
+    "additional_courses": [
+      "Docker & Kubernetes",
+      "React Advanced",
+      "DevSecOps"
+    ]
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Fluent)",
+      "Japanese (Intermediate)"
+    ],
+    "availability": "Immediate",
+    "relocation_willingness": true,
+    "travel_willingness": false,
+    "expected_salary": "$2383/month"
+  },
+  "skills": [
+    "C++",
+    "Haskell",
+    "Echo",
+    "Quarkus",
+    "Laravel",
+    "React",
+    "AWS",
+    "Puppet",
+    "New Relic",
+    "ArgoCD"
+  ],
+  "job_titles": [
+    "Software Architect"
+  ],
+  "degrees": [
+    "Bachelor of Science in Cybersecurity"
+  ],
+  "certifications": [
+    "CompTIA Security+"
+  ]
+}

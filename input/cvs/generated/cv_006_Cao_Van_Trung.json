@@ -1,0 +1,150 @@
+{
+  "full_name": "Cao Van Trung",
+  "email": "caovantrung398@outlook.com",
+  "phone": "+84926079443",
+  "hard_skills": {
+    "programming_languages": [
+      "Haskell",
+      "C#",
+      "Clojure",
+      "Perl",
+      "JavaScript"
+    ],
+    "technologies_frameworks": [
+      "NestJS",
+      "PyTorch",
+      "Angular",
+      "Express.js",
+      "Node.js"
+    ],
+    "tools_software": [
+      "New Relic",
+      "Docker",
+      "Ansible"
+    ],
+    "certifications": [
+      "Certified Kubernetes Administrator",
+      "AWS Certified Developer"
+    ],
+    "industry_specific_skills": [
+      "gRPC",
+      "Data development",
+      "API design",
+      "Kanban"
+    ]
+  },
+  "work_experience": {
+    "total_years": 3.7,
+    "job_titles": [
+      "Data Engineer",
+      "Senior Data Engineer"
+    ],
+    "industries": [
+      "Gaming",
+      "Fintech",
+      "Agriculture",
+      "Education",
+      "E-commerce"
+    ],
+    "companies": [
+      "Framgia",
+      "Luxoft",
+      "Momo",
+      "Shopee",
+      "VNPay"
+    ],
+    "company_sizes": [
+      "SME"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Mentored junior developers on best practices",
+      "Built and deployed enterprise microservices architecture",
+      "Optimized mobile system performance and reliability",
+      "Integrated third-party APIs and services",
+      "Implemented CI/CD pipelines for automated deployments"
+    ],
+    "achievements": [
+      "Reduced server response time from 3.5s to 0.3s",
+      "Successfully migrated 269000 users to new platform"
+    ],
+    "project_types": [
+      "E-commerce platform",
+      "Inventory management system",
+      "Machine learning pipeline",
+      "API gateway"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Technical writing",
+      "Stakeholder management",
+      "Public speaking",
+      "Cross-functional teamwork"
+    ],
+    "leadership_management": [
+      "People management",
+      "Project management",
+      "Vision setting"
+    ],
+    "problem_solving": [
+      "Systems thinking",
+      "Critical thinking"
+    ],
+    "adaptability": [
+      "Growth mindset",
+      "Change management",
+      "Adaptive to new technologies"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Bachelor of Science"
+    ],
+    "majors": [
+      "Cybersecurity"
+    ],
+    "universities": [
+      "Phenikaa University"
+    ],
+    "additional_courses": [
+      "GraphQL"
+    ]
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Fluent)"
+    ],
+    "availability": "Negotiable",
+    "relocation_willingness": false,
+    "travel_willingness": true,
+    "expected_salary": "$1180/month"
+  },
+  "skills": [
+    "Haskell",
+    "C#",
+    "Clojure",
+    "Perl",
+    "JavaScript",
+    "NestJS",
+    "PyTorch",
+    "Angular",
+    "Express.js",
+    "Node.js",
+    "New Relic",
+    "Docker",
+    "Ansible"
+  ],
+  "job_titles": [
+    "Data Engineer"
+  ],
+  "degrees": [
+    "Bachelor of Science in Cybersecurity"
+  ],
+  "certifications": [
+    "Certified Kubernetes Administrator",
+    "AWS Certified Developer"
+  ]
+}

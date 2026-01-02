@@ -19,6 +19,7 @@ import logging
 import requests
 import tempfile
 import os
+from datetime import datetime
 from typing import Dict, Any, Tuple
 from openai import OpenAI
 from openai import BadRequestError
@@ -64,15 +65,29 @@ class MessageHandlers:
         try:
             # Validate message structure
             if not isinstance(message_data, dict):
-                return False, {"error": "Invalid message format"}, "DATA_ERROR"
+                return False, {
+                    "applicationId": None,
+                    "isSuccess": False,
+                    "version": None,
+                    "timestamp": datetime.utcnow().isoformat() + "Z",
+                    "error": "Invalid message format",
+                    "data": None
+                }, "DATA_ERROR"
             
             # Validate required fields theo format mới của Spring Boot
             required_fields = ["applicationId", "fileUrl", "jobTitle", "jobDescription"]
             missing_fields = [field for field in required_fields if field not in message_data]
             
             if missing_fields:
+                app_id = message_data.get("applicationId")
+                version = message_data.get("version")
                 return False, {
-                    "error": f"Missing required fields: {', '.join(missing_fields)}"
+                    "applicationId": app_id,
+                    "isSuccess": False,
+                    "version": version,
+                    "timestamp": datetime.utcnow().isoformat() + "Z",
+                    "error": f"Missing required fields: {', '.join(missing_fields)}",
+                    "data": None
                 }, "DATA_ERROR"
             
             # Extract data
@@ -89,14 +104,28 @@ class MessageHandlers:
             
             # Validate fileUrl
             if not file_url or not file_url.strip():
-                return False, {"error": "fileUrl is empty"}, "DATA_ERROR"
+                return False, {
+                    "applicationId": application_id,
+                    "isSuccess": False,
+                    "version": version,
+                    "timestamp": datetime.utcnow().isoformat() + "Z",
+                    "error": "fileUrl is empty",
+                    "data": None
+                }, "DATA_ERROR"
             
             # Bước 1: Tải và parse CV từ fileUrl
             logger.info(f"Bước 1: Tải CV từ URL: {file_url}")
             cv_content = self._download_and_parse_cv(file_url)
             
             if not cv_content:
-                return False, {"error": "Failed to download or parse CV file"}, "SYSTEM_ERROR"
+                return False, {
+                    "applicationId": application_id,
+                    "isSuccess": False,
+                    "version": version,
+                    "timestamp": datetime.utcnow().isoformat() + "Z",
+                    "error": "Failed to download or parse CV file",
+                    "data": None
+                }, "SYSTEM_ERROR"
             
             # Bước 2: Kết hợp thông tin JD thành một đoạn text
             logger.info("Bước 2: Tổng hợp thông tin Job Description...")
@@ -119,8 +148,12 @@ class MessageHandlers:
                 if "maximum context length" in str(e):
                     logger.error(f"CV content quá dài, vượt quá token limit: {len(cv_content)} chars")
                     return False, {
-                        "error": "CV content is too long and exceeds token limit",
-                        "details": "Please provide a shorter CV file"
+                        "applicationId": application_id,
+                        "isSuccess": False,
+                        "version": version,
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "error": "CV content is too long and exceeds token limit. Please provide a shorter CV file",
+                        "data": None
                     }, "DATA_ERROR"
                 raise
             
@@ -135,8 +168,12 @@ class MessageHandlers:
                 if "maximum context length" in str(e):
                     logger.error(f"JD content quá dài, vượt quá token limit: {len(jd_content)} chars")
                     return False, {
-                        "error": "Job description is too long and exceeds token limit",
-                        "details": "Please provide a shorter job description"
+                        "applicationId": application_id,
+                        "isSuccess": False,
+                        "version": version,
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "error": "Job description is too long and exceeds token limit. Please provide a shorter job description",
+                        "data": None
                     }, "DATA_ERROR"
                 raise
             
@@ -148,8 +185,12 @@ class MessageHandlers:
                 if "maximum context length" in str(e):
                     logger.error(f"CV content quá dài cho embedding: {len(cv_content)} chars")
                     return False, {
-                        "error": "CV content is too long for embedding generation",
-                        "details": "Please provide a shorter CV file"
+                        "applicationId": application_id,
+                        "isSuccess": False,
+                        "version": version,
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "error": "CV content is too long for embedding generation. Please provide a shorter CV file",
+                        "data": None
                     }, "DATA_ERROR"
                 raise
             except RuntimeError as e:
@@ -157,8 +198,12 @@ class MessageHandlers:
                 if "maximum context length" in str(e):
                     logger.error(f"CV content quá dài cho embedding: {len(cv_content)} chars")
                     return False, {
-                        "error": "CV content is too long for embedding generation",
-                        "details": "Please provide a shorter CV file"
+                        "applicationId": application_id,
+                        "isSuccess": False,
+                        "version": version,
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "error": "CV content is too long for embedding generation. Please provide a shorter CV file",
+                        "data": None
                     }, "DATA_ERROR"
                 raise
             
@@ -168,8 +213,12 @@ class MessageHandlers:
                 if "maximum context length" in str(e):
                     logger.error(f"JD content quá dài cho embedding: {len(jd_content)} chars")
                     return False, {
-                        "error": "Job description is too long for embedding generation",
-                        "details": "Please provide a shorter job description"
+                        "applicationId": application_id,
+                        "isSuccess": False,
+                        "version": version,
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "error": "Job description is too long for embedding generation. Please provide a shorter job description",
+                        "data": None
                     }, "DATA_ERROR"
                 raise
             except RuntimeError as e:
@@ -177,8 +226,12 @@ class MessageHandlers:
                 if "maximum context length" in str(e):
                     logger.error(f"JD content quá dài cho embedding: {len(jd_content)} chars")
                     return False, {
-                        "error": "Job description is too long for embedding generation",
-                        "details": "Please provide a shorter job description"
+                        "applicationId": application_id,
+                        "isSuccess": False,
+                        "version": version,
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "error": "Job description is too long for embedding generation. Please provide a shorter job description",
+                        "data": None
                     }, "DATA_ERROR"
                 raise
             
@@ -198,28 +251,26 @@ class MessageHandlers:
             
             # Prepare response với 6 tiêu chí đánh giá
             breakdown = score_result.get("breakdown", {})
+            
+            # Tạo response theo format mới
             response_data = {
                 "applicationId": application_id,
+                "isSuccess": True,
                 "version": version,
-                "matchScore": round(score_result["total_score"] * 100, 2),  # Convert to 0-100 scale
-                "breakdown": {
-                    "hardSkillsScore": round(breakdown.get("hard_skills", 0) * 100, 2),
-                    "workExperienceScore": round(breakdown.get("work_experience", 0) * 100, 2),
-                    "responsibilitiesAchievementsScore": round(breakdown.get("responsibilities", 0) * 100, 2),
-                    "softSkillsScore": round(breakdown.get("soft_skills", 0) * 100, 2),
-                    "educationTrainingScore": round(breakdown.get("education", 0) * 100, 2),
-                    "additionalFactorsScore": round(breakdown.get("additional_factors", 0) * 100, 2)
-                },
-                "weights": {
-                    "hardSkills": 30,
-                    "workExperience": 25,
-                    "responsibilitiesAchievements": 15,
-                    "softSkills": 10,
-                    "educationTraining": 5,
-                    "additionalFactors": 15
-                },
-                "cvStructuredData": cv_structured_json,
-                "jdStructuredData": jd_structured_json
+                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "error": None,
+                "data": {
+                    "applicationId": application_id,
+                    "matchScore": round(score_result["total_score"] * 100, 2),  # Convert to 0-100 scale
+                    "breakdown": {
+                        "hardSkillsScore": round(breakdown.get("hard_skills", 0) * 100, 2),
+                        "workExperienceScore": round(breakdown.get("work_experience", 0) * 100, 2),
+                        "responsibilitiesAchievementsScore": round(breakdown.get("responsibilities", 0) * 100, 2),
+                        "softSkillsScore": round(breakdown.get("soft_skills", 0) * 100, 2),
+                        "educationTrainingScore": round(breakdown.get("education", 0) * 100, 2),
+                        "additionalFactorsScore": round(breakdown.get("additional_factors", 0) * 100, 2)
+                    }
+                }
             }
             
             logger.info(f"Hoàn thành matching: score={score_result['total_score']:.2f}")
@@ -227,13 +278,40 @@ class MessageHandlers:
             
         except json.JSONDecodeError as e:
             logger.error(f"JSON decode error: {str(e)}")
-            return False, {"error": f"Invalid JSON: {str(e)}"}, "DATA_ERROR"
+            app_id = message_data.get("applicationId") if isinstance(message_data, dict) else None
+            version = message_data.get("version") if isinstance(message_data, dict) else None
+            return False, {
+                "applicationId": app_id,
+                "isSuccess": False,
+                "version": version,
+                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "error": f"Invalid JSON: {str(e)}",
+                "data": None
+            }, "DATA_ERROR"
         except KeyError as e:
             logger.error(f"Missing field error: {str(e)}")
-            return False, {"error": f"Missing required field: {str(e)}"}, "DATA_ERROR"
+            app_id = message_data.get("applicationId") if isinstance(message_data, dict) else None
+            version = message_data.get("version") if isinstance(message_data, dict) else None
+            return False, {
+                "applicationId": app_id,
+                "isSuccess": False,
+                "version": version,
+                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "error": f"Missing required field: {str(e)}",
+                "data": None
+            }, "DATA_ERROR"
         except Exception as e:
             logger.error(f"System error in handle_message: {str(e)}", exc_info=True)
-            return False, {"error": f"System error: {str(e)}"}, "SYSTEM_ERROR"
+            app_id = message_data.get("applicationId") if isinstance(message_data, dict) else None
+            version = message_data.get("version") if isinstance(message_data, dict) else None
+            return False, {
+                "applicationId": app_id,
+                "isSuccess": False,
+                "version": version,
+                "timestamp": datetime.utcnow().isoformat() + "Z",
+                "error": f"System error: {str(e)}",
+                "data": None
+            }, "SYSTEM_ERROR"
     
     def _download_and_parse_cv(self, file_url: str) -> str:
         """

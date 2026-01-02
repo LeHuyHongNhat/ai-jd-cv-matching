@@ -1,0 +1,140 @@
+{
+  "full_name": "Dinh Thi Quan",
+  "email": "dinhthiquan709@protonmail.com",
+  "phone": "+84933217902",
+  "hard_skills": {
+    "programming_languages": [
+      "Clojure",
+      "Perl",
+      "JavaScript",
+      "Julia",
+      "Kotlin"
+    ],
+    "technologies_frameworks": [
+      "ASP.NET",
+      "Flask",
+      "Scikit-learn",
+      "Spring Boot"
+    ],
+    "tools_software": [
+      "RabbitMQ",
+      "Rancher",
+      "Kubernetes",
+      "Helm"
+    ],
+    "certifications": [
+      "PMP - Project Management Professional"
+    ],
+    "industry_specific_skills": [
+      "RESTful APIs",
+      "API design",
+      "DevOps practices"
+    ]
+  },
+  "work_experience": {
+    "total_years": 5.9,
+    "job_titles": [
+      "DevOps Engineer",
+      "Senior DevOps Engineer"
+    ],
+    "industries": [
+      "Cybersecurity"
+    ],
+    "companies": [
+      "Shopee"
+    ],
+    "company_sizes": [
+      "Startup",
+      "Enterprise",
+      "SME"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Optimized desktop system performance and reliability",
+      "Managed database design and optimization",
+      "Performed troubleshooting and bug fixes",
+      "Participated in code reviews and technical discussions"
+    ],
+    "achievements": [
+      "Improved API response time by 443ms",
+      "Improved system performance by 41%",
+      "Led team of 5 developers on major project"
+    ],
+    "project_types": [
+      "Machine learning pipeline",
+      "Customer relationship management"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Technical writing",
+      "Negotiation skills",
+      "Team collaboration",
+      "Remote collaboration",
+      "Agile teamwork"
+    ],
+    "leadership_management": [
+      "Project management",
+      "Mentoring junior developers"
+    ],
+    "problem_solving": [
+      "Creative problem solving",
+      "Troubleshooting",
+      "Algorithm optimization"
+    ],
+    "adaptability": [
+      "Continuous learning",
+      "Change management"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Bachelor of Science"
+    ],
+    "majors": [
+      "Computer Science"
+    ],
+    "universities": [
+      "Phenikaa University"
+    ],
+    "additional_courses": [
+      "Cloud Native Development"
+    ]
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Fluent)",
+      "Korean (Basic)"
+    ],
+    "availability": "2 weeks notice",
+    "relocation_willingness": true,
+    "travel_willingness": true,
+    "expected_salary": "$2613/month"
+  },
+  "skills": [
+    "Clojure",
+    "Perl",
+    "JavaScript",
+    "Julia",
+    "Kotlin",
+    "ASP.NET",
+    "Flask",
+    "Scikit-learn",
+    "Spring Boot",
+    "RabbitMQ",
+    "Rancher",
+    "Kubernetes",
+    "Helm"
+  ],
+  "job_titles": [
+    "DevOps Engineer"
+  ],
+  "degrees": [
+    "Bachelor of Science in Computer Science"
+  ],
+  "certifications": [
+    "PMP - Project Management Professional"
+  ]
+}

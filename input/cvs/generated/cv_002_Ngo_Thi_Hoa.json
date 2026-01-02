@@ -1,0 +1,145 @@
+{
+  "full_name": "Ngo Thi Hoa",
+  "email": "ngothihoa104@yahoo.com",
+  "phone": "+84926391569",
+  "hard_skills": {
+    "programming_languages": [
+      "Shell",
+      "Dart",
+      "Scala",
+      "Swift"
+    ],
+    "technologies_frameworks": [
+      "Svelte",
+      "Node.js",
+      "Flask",
+      "Echo",
+      "Laravel",
+      "Angular",
+      "Symfony"
+    ],
+    "tools_software": [
+      "Kubernetes",
+      "Jira",
+      "RabbitMQ",
+      "Nginx"
+    ],
+    "certifications": [],
+    "industry_specific_skills": [
+      "GraphQL",
+      "Integration testing",
+      "Code review",
+      "API design",
+      "DevOps practices",
+      "Software development"
+    ]
+  },
+  "work_experience": {
+    "total_years": 6.2,
+    "job_titles": [
+      "Software Architect",
+      "Senior Software Architect"
+    ],
+    "industries": [
+      "Cybersecurity",
+      "Healthcare"
+    ],
+    "companies": [
+      "VNPay",
+      "CMC Corporation"
+    ],
+    "company_sizes": [
+      "Startup"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Designed and implemented scalable desktop solutions",
+      "Integrated third-party APIs and services",
+      "Performed troubleshooting and bug fixes",
+      "Implemented CI/CD pipelines for automated deployments",
+      "Implemented security best practices and compliance"
+    ],
+    "achievements": [
+      "Increased test coverage from 50% to 70%",
+      "Automated 27 manual processes"
+    ],
+    "project_types": [
+      "Financial trading platform",
+      "Inventory management system",
+      "IoT monitoring dashboard",
+      "Machine learning pipeline"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Presentation skills",
+      "Client relationship",
+      "Remote collaboration",
+      "Cross-functional teamwork",
+      "Code review facilitation"
+    ],
+    "leadership_management": [
+      "Mentoring junior developers",
+      "Team leadership"
+    ],
+    "problem_solving": [
+      "Analytical thinking",
+      "Troubleshooting"
+    ],
+    "adaptability": [
+      "Continuous learning"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Master of Science"
+    ],
+    "majors": [
+      "Information Technology"
+    ],
+    "universities": [
+      "HCMC University of Technology and Education"
+    ],
+    "additional_courses": [
+      "React Advanced",
+      "Agile Scrum Master",
+      "Machine Learning Bootcamp",
+      "Deep Learning Specialization"
+    ]
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Fluent)"
+    ],
+    "availability": "Immediate",
+    "relocation_willingness": true,
+    "travel_willingness": false,
+    "expected_salary": "$2944/month"
+  },
+  "skills": [
+    "Shell",
+    "Dart",
+    "Scala",
+    "Swift",
+    "Svelte",
+    "Node.js",
+    "Flask",
+    "Echo",
+    "Laravel",
+    "Angular",
+    "Symfony",
+    "Kubernetes",
+    "Jira",
+    "RabbitMQ",
+    "Nginx"
+  ],
+  "job_titles": [
+    "Software Architect"
+  ],
+  "degrees": [
+    "Master of Science in Information Technology"
+  ],
+  "certifications": []
+}

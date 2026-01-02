@@ -1,0 +1,137 @@
+{
+  "full_name": "Nguyen Xuan Phong",
+  "email": "nguyenxuanphong512@gmail.com",
+  "phone": "+84989078200",
+  "hard_skills": {
+    "programming_languages": [
+      "Objective-C",
+      "Swift",
+      "R",
+      "C#"
+    ],
+    "technologies_frameworks": [
+      "Django",
+      "NumPy",
+      "TensorFlow",
+      "Express.js",
+      "Streamlit",
+      "Flask"
+    ],
+    "tools_software": [
+      "GCP",
+      "Datadog",
+      "RabbitMQ"
+    ],
+    "certifications": [
+      "Azure Fundamentals",
+      "CISSP - Certified Information Systems Security Professional"
+    ],
+    "industry_specific_skills": [
+      "Agile/Scrum",
+      "API design",
+      "WebSocket"
+    ]
+  },
+  "work_experience": {
+    "total_years": 0.8,
+    "job_titles": [
+      "Data Scientist",
+      "Junior Data Scientist"
+    ],
+    "industries": [
+      "Energy"
+    ],
+    "companies": [
+      "Katalon"
+    ],
+    "company_sizes": [
+      "Enterprise",
+      "SME"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Implemented CI/CD pipelines for automated deployments",
+      "Developed and maintained web applications",
+      "Managed database design and optimization"
+    ],
+    "achievements": [
+      "Implemented feature that increased revenue by 18%",
+      "Increased test coverage from 53% to 73%",
+      "Reduced infrastructure costs by 66%"
+    ],
+    "project_types": [
+      "Cloud migration",
+      "Booking and reservation system"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Active listening",
+      "Client relationship",
+      "Team building",
+      "Agile teamwork"
+    ],
+    "leadership_management": [
+      "Vision setting"
+    ],
+    "problem_solving": [
+      "Troubleshooting",
+      "Debugging complex systems",
+      "Analytical thinking"
+    ],
+    "adaptability": [
+      "Innovation",
+      "Open to feedback",
+      "Adaptive to new technologies"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Bachelor of Science"
+    ],
+    "majors": [
+      "Software Engineering"
+    ],
+    "universities": [
+      "University of Information Technology - VNU-HCM"
+    ],
+    "additional_courses": []
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Fluent)",
+      "Korean (Basic)"
+    ],
+    "availability": "Negotiable",
+    "relocation_willingness": false,
+    "travel_willingness": true,
+    "expected_salary": "$756/month"
+  },
+  "skills": [
+    "Objective-C",
+    "Swift",
+    "R",
+    "C#",
+    "Django",
+    "NumPy",
+    "TensorFlow",
+    "Express.js",
+    "Streamlit",
+    "Flask",
+    "GCP",
+    "Datadog",
+    "RabbitMQ"
+  ],
+  "job_titles": [
+    "Data Scientist"
+  ],
+  "degrees": [
+    "Bachelor of Science in Software Engineering"
+  ],
+  "certifications": [
+    "Azure Fundamentals",
+    "CISSP - Certified Information Systems Security Professional"
+  ]
+}

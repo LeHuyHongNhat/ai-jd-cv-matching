@@ -1,0 +1,143 @@
+{
+  "full_name": "Vo Van Trung",
+  "email": "vovantrung844@protonmail.com",
+  "phone": "+84922576045",
+  "hard_skills": {
+    "programming_languages": [
+      "Objective-C",
+      "Julia",
+      "Perl"
+    ],
+    "technologies_frameworks": [
+      "NestJS",
+      "Pandas",
+      "Django"
+    ],
+    "tools_software": [
+      "AWS",
+      "Chef",
+      "Ansible",
+      "Helm"
+    ],
+    "certifications": [
+      "TensorFlow Developer Certificate"
+    ],
+    "industry_specific_skills": [
+      "Code review",
+      "RESTful APIs",
+      "Integration testing",
+      "Agile/Scrum",
+      "API design"
+    ]
+  },
+  "work_experience": {
+    "total_years": 8.0,
+    "job_titles": [
+      "Backend Developer",
+      "Senior Backend Developer"
+    ],
+    "industries": [
+      "Banking",
+      "Media & Entertainment",
+      "E-commerce",
+      "Agriculture",
+      "IoT"
+    ],
+    "companies": [
+      "Shopee",
+      "NITECO",
+      "Savvycom",
+      "Cognizant",
+      "VNG Corporation"
+    ],
+    "company_sizes": [
+      "Startup",
+      "SME",
+      "Enterprise"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Developed and maintained distributed applications",
+      "Implemented security best practices and compliance",
+      "Performed troubleshooting and bug fixes",
+      "Optimized mobile system performance and reliability"
+    ],
+    "achievements": [
+      "Achieved 21% customer satisfaction rating",
+      "Successfully migrated 323000 users to new platform",
+      "Reduced server response time from 8.4s to 3.28s",
+      "Improved API response time by 328ms"
+    ],
+    "project_types": [
+      "IoT monitoring dashboard",
+      "Human resource management"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Client relationship",
+      "Technical writing",
+      "Stakeholder management",
+      "Active listening",
+      "Pair programming",
+      "Code review facilitation",
+      "Cross-functional teamwork"
+    ],
+    "leadership_management": [
+      "Vision setting",
+      "Mentoring junior developers"
+    ],
+    "problem_solving": [
+      "Critical thinking",
+      "Analytical thinking",
+      "Root cause analysis"
+    ],
+    "adaptability": [
+      "Adaptive to new technologies"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Master of Science"
+    ],
+    "majors": [
+      "Data Science"
+    ],
+    "universities": [
+      "British University Vietnam"
+    ],
+    "additional_courses": []
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Fluent)"
+    ],
+    "availability": "2 weeks notice",
+    "relocation_willingness": true,
+    "travel_willingness": true,
+    "expected_salary": "$708/month"
+  },
+  "skills": [
+    "Objective-C",
+    "Julia",
+    "Perl",
+    "NestJS",
+    "Pandas",
+    "Django",
+    "AWS",
+    "Chef",
+    "Ansible",
+    "Helm"
+  ],
+  "job_titles": [
+    "Backend Developer"
+  ],
+  "degrees": [
+    "Master of Science in Data Science"
+  ],
+  "certifications": [
+    "TensorFlow Developer Certificate"
+  ]
+}
