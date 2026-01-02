@@ -90,12 +90,19 @@ class RabbitMQConsumer:
                 logger.error(f"JSON decode error: {str(e)}")
                 error_msg = f"Invalid JSON format: {str(e)}"
                 
+                # Tạo error response theo format mới
+                from datetime import datetime
+                error_response = {
+                    "applicationId": application_id,
+                    "isSuccess": False,
+                    "version": None,
+                    "timestamp": datetime.utcnow().isoformat() + "Z",
+                    "error": error_msg,
+                    "data": None
+                }
+                
                 # Gửi error response
-                self.producer.send_error_response(
-                    request_id=str(application_id),
-                    error_message=error_msg,
-                    error_type="DATA_ERROR"
-                )
+                self.producer.send_direct_response(error_response)
                 
                 # ACK để bỏ qua message lỗi
                 ch.basic_ack(delivery_tag=method.delivery_tag)
@@ -106,12 +113,12 @@ class RabbitMQConsumer:
             try:
                 success, response_data, error_type = self.message_handlers.handle_message(message_data)
                 
+                # response_data đã có format đầy đủ: {applicationId, isSuccess, version, timestamp, error, data}
+                # Chỉ cần gửi trực tiếp
+                
                 if success:
                     # THÀNH CÔNG -> Gửi kết quả -> ACK
-                    self.producer.send_success_response(
-                        request_id=str(application_id),
-                        data=response_data
-                    )
+                    self.producer.send_direct_response(response_data)
                     ch.basic_ack(delivery_tag=method.delivery_tag)
                     logger.info("ACK - Message đã được xử lý thành công")
                     
@@ -121,11 +128,7 @@ class RabbitMQConsumer:
                     
                     if error_type == "DATA_ERROR":
                         # LỖI DỮ LIỆU -> Gửi error response -> ACK
-                        self.producer.send_error_response(
-                            request_id=str(application_id),
-                            error_message=error_message,
-                            error_type="DATA_ERROR"
-                        )
+                        self.producer.send_direct_response(response_data)
                         ch.basic_ack(delivery_tag=method.delivery_tag)
                         logger.warning(f"ACK - Data error: {error_message}")
                         
@@ -141,11 +144,16 @@ class RabbitMQConsumer:
                 
                 try:
                     # Thử gửi error response (nếu có thể)
-                    self.producer.send_error_response(
-                        request_id=str(application_id),
-                        error_message=f"System error: {str(e)}",
-                        error_type="SYSTEM_ERROR"
-                    )
+                    from datetime import datetime
+                    error_response = {
+                        "applicationId": application_id,
+                        "isSuccess": False,
+                        "version": None,
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "error": f"System error: {str(e)}",
+                        "data": None
+                    }
+                    self.producer.send_direct_response(error_response)
                 except:
                     logger.error("Không thể gửi error response")
                 

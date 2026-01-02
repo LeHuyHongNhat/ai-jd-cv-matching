@@ -1,0 +1,162 @@
+{
+  "full_name": "Vu Thi Hoa",
+  "email": "vuthihoa303@gmail.com",
+  "phone": "+84958436558",
+  "hard_skills": {
+    "programming_languages": [
+      "PHP",
+      "Haskell",
+      "Ruby",
+      "Kotlin",
+      "Dart"
+    ],
+    "technologies_frameworks": [
+      "Scikit-learn",
+      "Symfony",
+      "Apache Spark",
+      "Ruby on Rails",
+      "Express.js",
+      "Streamlit"
+    ],
+    "tools_software": [
+      "Datadog",
+      "Vault",
+      "Puppet",
+      "Grafana",
+      "Azure",
+      "RabbitMQ"
+    ],
+    "certifications": [
+      "Google Cloud Professional"
+    ],
+    "industry_specific_skills": [
+      "E2E testing",
+      "API design",
+      "DevOps practices",
+      "Embedded development",
+      "Code review",
+      "GraphQL"
+    ]
+  },
+  "work_experience": {
+    "total_years": 7.0,
+    "job_titles": [
+      "Embedded Systems Engineer",
+      "Senior Embedded Systems Engineer"
+    ],
+    "industries": [
+      "Social Media",
+      "IoT",
+      "Real Estate",
+      "Gaming",
+      "Banking"
+    ],
+    "companies": [
+      "Accenture",
+      "EPAM",
+      "ELCA",
+      "Techcombank",
+      "Savvycom"
+    ],
+    "company_sizes": [
+      "Startup"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Implemented CI/CD pipelines for automated deployments",
+      "Implemented security best practices and compliance",
+      "Optimized enterprise system performance and reliability",
+      "Managed database design and optimization",
+      "Developed and maintained enterprise applications",
+      "Integrated third-party APIs and services"
+    ],
+    "achievements": [
+      "Achieved 34% customer satisfaction rating",
+      "Decreased bug rate by 21%",
+      "Increased test coverage from 37% to 62%",
+      "Scaled system to handle 63M requests per day",
+      "Improved API response time by 448ms"
+    ],
+    "project_types": [
+      "IoT monitoring dashboard",
+      "Data analytics dashboard"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Presentation skills",
+      "Public speaking",
+      "Effective communication",
+      "Active listening",
+      "Pair programming",
+      "Agile teamwork",
+      "Team building"
+    ],
+    "leadership_management": [
+      "Decision making",
+      "People management",
+      "Vision setting"
+    ],
+    "problem_solving": [
+      "Root cause analysis",
+      "Performance optimization"
+    ],
+    "adaptability": [
+      "Change management",
+      "Adaptive to new technologies"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Master of Science"
+    ],
+    "majors": [
+      "Information Technology"
+    ],
+    "universities": [
+      "Duy Tan University"
+    ],
+    "additional_courses": [
+      "AWS Cloud Practitioner"
+    ]
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Advanced)"
+    ],
+    "availability": "2 weeks notice",
+    "relocation_willingness": false,
+    "travel_willingness": false,
+    "expected_salary": "$832/month"
+  },
+  "skills": [
+    "PHP",
+    "Haskell",
+    "Ruby",
+    "Kotlin",
+    "Dart",
+    "Scikit-learn",
+    "Symfony",
+    "Apache Spark",
+    "Ruby on Rails",
+    "Express.js",
+    "Streamlit",
+    "Datadog",
+    "Vault",
+    "Puppet",
+    "Grafana",
+    "Azure",
+    "RabbitMQ"
+  ],
+  "job_titles": [
+    "Embedded Systems Engineer"
+  ],
+  "degrees": [
+    "Master of Science in Information Technology"
+  ],
+  "certifications": [
+    "Google Cloud Professional"
+  ]
+}

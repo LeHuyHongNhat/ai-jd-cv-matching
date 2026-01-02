@@ -1,0 +1,153 @@
+{
+  "full_name": "Pham Duy Yen",
+  "email": "phamduyyen488@outlook.com",
+  "phone": "+84929746217",
+  "hard_skills": {
+    "programming_languages": [
+      "C++",
+      "R",
+      "Shell",
+      "Ruby",
+      "Swift"
+    ],
+    "technologies_frameworks": [
+      "Ruby on Rails",
+      "FastAPI",
+      "Keras",
+      "Pandas",
+      "ASP.NET",
+      "Express.js",
+      "Nuxt.js"
+    ],
+    "tools_software": [
+      "Docker",
+      "Git",
+      "Prometheus",
+      "SonarQube"
+    ],
+    "certifications": [
+      "AWS Certified Solutions Architect",
+      "TensorFlow Developer Certificate"
+    ],
+    "industry_specific_skills": [
+      "Agile/Scrum",
+      "Unit testing",
+      "Blockchain development",
+      "API design",
+      "Code review"
+    ]
+  },
+  "work_experience": {
+    "total_years": 2.7,
+    "job_titles": [
+      "Blockchain Developer",
+      "Junior Blockchain Developer"
+    ],
+    "industries": [
+      "Manufacturing",
+      "Energy",
+      "Telecommunications",
+      "E-commerce"
+    ],
+    "companies": [
+      "EPAM",
+      "NITECO",
+      "VNPay",
+      "TMA Solutions"
+    ],
+    "company_sizes": [
+      "SME"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Managed database design and optimization",
+      "Developed and maintained desktop applications",
+      "Created technical documentation and user guides",
+      "Optimized desktop system performance and reliability"
+    ],
+    "achievements": [
+      "Reduced deployment time by 27%",
+      "Increased test coverage from 23% to 51%",
+      "Improved API response time by 139ms",
+      "Decreased bug rate by 66%",
+      "Successfully migrated 294000 users to new platform"
+    ],
+    "project_types": [
+      "Video streaming service",
+      "API gateway"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Active listening",
+      "Client relationship",
+      "Team building"
+    ],
+    "leadership_management": [
+      "Agile leadership",
+      "Project management",
+      "People management"
+    ],
+    "problem_solving": [
+      "Performance optimization",
+      "Root cause analysis"
+    ],
+    "adaptability": [
+      "Flexible mindset",
+      "Growth mindset"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Bachelor of Science"
+    ],
+    "majors": [
+      "Electronics and Telecommunications"
+    ],
+    "universities": [
+      "Phenikaa University"
+    ],
+    "additional_courses": [
+      "React Advanced"
+    ]
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Advanced)"
+    ],
+    "availability": "1 month notice",
+    "relocation_willingness": false,
+    "travel_willingness": true,
+    "expected_salary": "$3283/month"
+  },
+  "skills": [
+    "C++",
+    "R",
+    "Shell",
+    "Ruby",
+    "Swift",
+    "Ruby on Rails",
+    "FastAPI",
+    "Keras",
+    "Pandas",
+    "ASP.NET",
+    "Express.js",
+    "Nuxt.js",
+    "Docker",
+    "Git",
+    "Prometheus",
+    "SonarQube"
+  ],
+  "job_titles": [
+    "Blockchain Developer"
+  ],
+  "degrees": [
+    "Bachelor of Science in Electronics and Telecommunications"
+  ],
+  "certifications": [
+    "AWS Certified Solutions Architect",
+    "TensorFlow Developer Certificate"
+  ]
+}

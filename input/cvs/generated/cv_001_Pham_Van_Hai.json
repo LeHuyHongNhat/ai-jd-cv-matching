@@ -1,0 +1,152 @@
+{
+  "full_name": "Pham Van Hai",
+  "email": "phamvanhai381@outlook.com",
+  "phone": "+84929958838",
+  "hard_skills": {
+    "programming_languages": [
+      "Python",
+      "JavaScript"
+    ],
+    "technologies_frameworks": [
+      "Spring Boot",
+      "Node.js",
+      "Symfony",
+      "Svelte",
+      "React",
+      "ASP.NET",
+      "Hadoop"
+    ],
+    "tools_software": [
+      "Helm",
+      "Grafana",
+      "Chef",
+      "Selenium",
+      "Ansible",
+      "ArgoCD"
+    ],
+    "certifications": [
+      "Google Cloud Professional",
+      "CompTIA Security+"
+    ],
+    "industry_specific_skills": [
+      "DevOps practices",
+      "ML development",
+      "API design",
+      "Code review",
+      "Unit testing"
+    ]
+  },
+  "work_experience": {
+    "total_years": 9.0,
+    "job_titles": [
+      "ML Engineer",
+      "Senior ML Engineer"
+    ],
+    "industries": [
+      "Banking",
+      "Healthcare",
+      "Telecommunications",
+      "Retail"
+    ],
+    "companies": [
+      "Cognizant",
+      "Orient Software",
+      "TMA Solutions",
+      "Axon Active"
+    ],
+    "company_sizes": [
+      "SME"
+    ]
+  },
+  "responsibilities_achievements": {
+    "key_responsibilities": [
+      "Collaborated with cross-functional teams of 11 members",
+      "Created technical documentation and user guides",
+      "Performed troubleshooting and bug fixes"
+    ],
+    "achievements": [
+      "Scaled system to handle 69M requests per day",
+      "Achieved 17% customer satisfaction rating"
+    ],
+    "project_types": [
+      "API gateway",
+      "IoT monitoring dashboard",
+      "Content management system",
+      "Data warehouse",
+      "Payment gateway"
+    ]
+  },
+  "soft_skills": {
+    "communication_teamwork": [
+      "Active listening",
+      "Public speaking",
+      "Effective communication",
+      "Code review facilitation",
+      "Conflict resolution",
+      "Pair programming"
+    ],
+    "leadership_management": [
+      "Agile leadership"
+    ],
+    "problem_solving": [
+      "Systems thinking",
+      "Root cause analysis"
+    ],
+    "adaptability": [
+      "Growth mindset",
+      "Adaptive to new technologies"
+    ]
+  },
+  "education_training": {
+    "degrees": [
+      "Bachelor of Science"
+    ],
+    "majors": [
+      "Cybersecurity"
+    ],
+    "universities": [
+      "British University Vietnam"
+    ],
+    "additional_courses": [
+      "Cloud Native Development",
+      "React Advanced"
+    ]
+  },
+  "additional_factors": {
+    "languages": [
+      "Vietnamese (Native)",
+      "English (Intermediate)"
+    ],
+    "availability": "1 month notice",
+    "relocation_willingness": true,
+    "travel_willingness": false,
+    "expected_salary": "$2243/month"
+  },
+  "skills": [
+    "Python",
+    "JavaScript",
+    "Spring Boot",
+    "Node.js",
+    "Symfony",
+    "Svelte",
+    "React",
+    "ASP.NET",
+    "Hadoop",
+    "Helm",
+    "Grafana",
+    "Chef",
+    "Selenium",
+    "Ansible",
+    "ArgoCD"
+  ],
+  "job_titles": [
+    "ML Engineer"
+  ],
+  "degrees": [
+    "Bachelor of Science in Cybersecurity"
+  ],
+  "certifications": [
+    "Google Cloud Professional",
+    "CompTIA Security+"
+  ]
+}

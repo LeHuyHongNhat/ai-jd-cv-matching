@@ -112,6 +112,56 @@ class RabbitMQProducer:
         }
         self.send_response(request_id, error_data, success=False, error_message=error_message)
     
+    def send_direct_response(self, response_data: Dict[str, Any]):
+        """
+        Gửi response đã được format sẵn từ message_handlers
+        (response_data đã có đầy đủ structure: applicationId, isSuccess, version, timestamp, error, data)
+        
+        Args:
+            response_data: Dữ liệu response đã được format đầy đủ
+        """
+        try:
+            if not self.channel or not self.connection_manager.is_connected():
+                logger.warning("Kết nối bị mất, đang kết nối lại...")
+                self.connect()
+            
+            # Convert to JSON
+            message_body = json.dumps(response_data, ensure_ascii=False)
+            
+            # Publish message với properties
+            request_id = str(response_data.get("applicationId", "unknown"))
+            properties = pika.BasicProperties(
+                content_type='application/json',
+                delivery_mode=2,  # Persistent message
+                correlation_id=request_id
+            )
+            
+            self.channel.basic_publish(
+                exchange=settings.RABBITMQ_EXCHANGE,
+                routing_key=settings.RABBITMQ_OUTPUT_ROUTING_KEY,
+                body=message_body,
+                properties=properties
+            )
+            
+            is_success = response_data.get("isSuccess", False)
+            logger.info(f"Đã gửi response cho applicationId: {request_id}, isSuccess: {is_success}")
+            
+        except Exception as e:
+            logger.error(f"Lỗi khi gửi direct response: {str(e)}")
+            # Thử reconnect và gửi lại
+            try:
+                self.connect()
+                self.channel.basic_publish(
+                    exchange=settings.RABBITMQ_EXCHANGE,
+                    routing_key=settings.RABBITMQ_OUTPUT_ROUTING_KEY,
+                    body=message_body,
+                    properties=properties
+                )
+                logger.info(f"Đã gửi lại response sau khi reconnect")
+            except Exception as retry_error:
+                logger.error(f"Không thể gửi response sau khi retry: {str(retry_error)}")
+                raise
+    
     def close(self):
         """Đóng kết nối"""
         self.connection_manager.close()
