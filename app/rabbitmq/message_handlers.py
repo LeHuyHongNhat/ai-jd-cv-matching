@@ -115,17 +115,33 @@ class MessageHandlers:
             
             # Bước 1: Tải và parse CV từ fileUrl
             logger.info(f"Bước 1: Tải CV từ URL: {file_url}")
-            cv_content = self._download_and_parse_cv(file_url)
+            cv_result = self._download_and_parse_cv(file_url)
             
-            if not cv_content:
+            if cv_result is None:
+                # Lỗi download (network, timeout) - SYSTEM_ERROR để retry
                 return False, {
                     "applicationId": application_id,
                     "isSuccess": False,
                     "version": version,
                     "timestamp": datetime.utcnow().isoformat() + "Z",
-                    "error": "Failed to download or parse CV file",
+                    "error": "Failed to download CV file. Please check the file URL and network connection.",
                     "data": None
                 }, "SYSTEM_ERROR"
+            elif isinstance(cv_result, tuple) and len(cv_result) == 3:
+                # Lỗi parse (corrupt file, unsupported format) - DATA_ERROR để discard
+                error_type, error_msg, exception_detail = cv_result
+                logger.error(f"Lỗi parse CV: {error_msg}. Chi tiết: {exception_detail}")
+                return False, {
+                    "applicationId": application_id,
+                    "isSuccess": False,
+                    "version": version,
+                    "timestamp": datetime.utcnow().isoformat() + "Z",
+                    "error": f"Failed to parse CV file: {error_msg}. File may be corrupted, image-based PDF, or unsupported format.",
+                    "data": None
+                }, "DATA_ERROR"
+            else:
+                # Thành công
+                cv_content = cv_result
             
             # Bước 2: Kết hợp thông tin JD thành một đoạn text
             logger.info("Bước 2: Tổng hợp thông tin Job Description...")
@@ -313,7 +329,7 @@ class MessageHandlers:
                 "data": None
             }, "SYSTEM_ERROR"
     
-    def _download_and_parse_cv(self, file_url: str) -> str:
+    def _download_and_parse_cv(self, file_url: str):
         """
         Tải CV từ URL và parse thành text
         
@@ -321,8 +337,11 @@ class MessageHandlers:
             file_url: URL của file CV (PDF hoặc DOCX)
             
         Returns:
-            str: Nội dung text của CV
+            str: Nội dung text của CV nếu thành công
+            None: Nếu lỗi download (SYSTEM_ERROR - có thể retry)
+            tuple: (error_type, error_msg, exception_detail) nếu lỗi parse (DATA_ERROR - không retry)
         """
+        tmp_file_path = None
         try:
             # Download file
             logger.info(f"Đang tải file từ: {file_url}")
@@ -343,29 +362,48 @@ class MessageHandlers:
                     extension = '.docx'
                 else:
                     logger.error(f"Không xác định được loại file từ URL: {file_url}")
-                    return None
+                    return ("PARSE_ERROR", "Unsupported file type", f"Could not determine file type from URL or Content-Type")
             
             # Save to temp file
             with tempfile.NamedTemporaryFile(delete=False, suffix=extension) as tmp_file:
                 tmp_file.write(response.content)
                 tmp_file_path = tmp_file.name
             
+            # Parse file
+            logger.info(f"Đang parse file: {tmp_file_path}")
             try:
-                # Parse file
-                logger.info(f"Đang parse file: {tmp_file_path}")
                 text_content = self.parser_service.parse_file(tmp_file_path)
+                
+                # Kiểm tra nếu text_content rỗng (có thể là PDF scan/image-based)
+                if not text_content or not text_content.strip():
+                    return ("PARSE_ERROR", "Empty content extracted", 
+                           "PDF may be image-based or scanned. No text content found.")
+                
+                logger.info(f"Đã parse thành công: {len(text_content)} ký tự")
                 return text_content
-            finally:
-                # Clean up temp file
-                if os.path.exists(tmp_file_path):
-                    os.remove(tmp_file_path)
+                
+            except Exception as parse_error:
+                # Lỗi parse - đây là DATA_ERROR (file không hợp lệ, không nên retry)
+                error_type = type(parse_error).__name__
+                error_msg = str(parse_error)
+                logger.error(f"Lỗi khi parse file {tmp_file_path}: {error_type}: {error_msg}", exc_info=True)
+                return ("PARSE_ERROR", f"Failed to parse {extension} file", f"{error_type}: {error_msg}")
                     
         except requests.RequestException as e:
+            # Lỗi download - đây là SYSTEM_ERROR (có thể retry)
             logger.error(f"Lỗi khi download file từ URL {file_url}: {str(e)}")
             return None
         except Exception as e:
-            logger.error(f"Lỗi khi parse CV: {str(e)}", exc_info=True)
+            # Lỗi không xác định trong quá trình download
+            logger.error(f"Lỗi không xác định khi download/parse CV: {str(e)}", exc_info=True)
             return None
+        finally:
+            # Clean up temp file
+            if tmp_file_path and os.path.exists(tmp_file_path):
+                try:
+                    os.remove(tmp_file_path)
+                except Exception as cleanup_error:
+                    logger.warning(f"Không thể xóa temp file {tmp_file_path}: {str(cleanup_error)}")
     
     def _build_jd_content(
         self, 
