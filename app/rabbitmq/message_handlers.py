@@ -160,6 +160,30 @@ class MessageHandlers:
                     cv_content,
                     StructuredData
                 )
+            except RuntimeError as e:
+                error_str = str(e)
+                # Trường hợp input quá dài dẫn tới vượt giới hạn context/tokens của model
+                if "maximum context length" in error_str or (
+                    "rate_limit_exceeded" in error_str
+                    and "Request too large" in error_str
+                ):
+                    logger.error(
+                        f"CV content quá dài, vượt quá token limit hoặc context limit: "
+                        f"{len(cv_content)} chars. Chi tiết: {error_str}"
+                    )
+                    return False, {
+                        "applicationId": application_id,
+                        "isSuccess": False,
+                        "version": version,
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "error": (
+                            "CV content is too long and exceeds the model's limits. "
+                            "Please provide a shorter or more concise CV file."
+                        ),
+                        "data": None
+                    }, "DATA_ERROR"
+                # Các RuntimeError khác vẫn được xử lý ở except tổng phía dưới
+                raise
             except BadRequestError as e:
                 if "maximum context length" in str(e):
                     logger.error(f"CV content quá dài, vượt quá token limit: {len(cv_content)} chars")
@@ -180,6 +204,28 @@ class MessageHandlers:
                     jd_content,
                     StructuredData
                 )
+            except RuntimeError as e:
+                error_str = str(e)
+                if "maximum context length" in error_str or (
+                    "rate_limit_exceeded" in error_str
+                    and "Request too large" in error_str
+                ):
+                    logger.error(
+                        f"JD content quá dài, vượt quá token limit hoặc context limit: "
+                        f"{len(jd_content)} chars. Chi tiết: {error_str}"
+                    )
+                    return False, {
+                        "applicationId": application_id,
+                        "isSuccess": False,
+                        "version": version,
+                        "timestamp": datetime.utcnow().isoformat() + "Z",
+                        "error": (
+                            "Job description is too long and exceeds the model's limits. "
+                            "Please provide a shorter job description."
+                        ),
+                        "data": None
+                    }, "DATA_ERROR"
+                raise
             except BadRequestError as e:
                 if "maximum context length" in str(e):
                     logger.error(f"JD content quá dài, vượt quá token limit: {len(jd_content)} chars")
